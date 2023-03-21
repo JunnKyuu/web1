@@ -11,14 +11,15 @@
 
 2. week2_230310
 
-- 하이퍼링크 작성법
-- 리스트 태그 작성법
-- 입력 태그 작성법
-- 입력 태그 작성법
+- hyperlink
+- list tag
+- input tag
 
 ---
 <br>
 
 3. week3_230317
 
-- CSS selector 작성법
+- selector 
+- tag properties
+- unit
