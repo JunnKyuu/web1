@@ -21,5 +21,7 @@
 3. week3_230317
 
 - selector 
-- tag properties
+- property
 - unit
+- shadow
+- div
