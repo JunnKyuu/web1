@@ -33,3 +33,13 @@
 
 - Javascript 기본문법
 - for문을 이용한 별 찍기
+
+---
+<br>
+
+5. week6_230407
+
+- class
+- object
+- innerFunction
+
