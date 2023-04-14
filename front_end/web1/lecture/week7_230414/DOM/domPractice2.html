@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+  <script>
+    window.onload = function() {
+      // 문서 전체 h1 객체 선택
+      var headers = document.querySelectorAll('h1');
+
+      for(var i = 0; i < headers.length; i ++) {
+        var header = headers[i];
+        header.style.color = 'blue';
+        header.style.backgroundColor = 'yellow';
+        header.innerHTML = 'From Javascript.,,';
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Process - 1</h1>
+  <h1>Process - 2</h1>
+  <h1>Process - 3</h1>
+</body>
+</html>
