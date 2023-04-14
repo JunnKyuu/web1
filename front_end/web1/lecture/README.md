@@ -43,3 +43,11 @@
 - object
 - innerFunction
 
+---
+<br>
+
+6. week7_230414
+
+- DOM
+
+
