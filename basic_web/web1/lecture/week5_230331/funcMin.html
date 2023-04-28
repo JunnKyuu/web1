@@ -1,0 +1,16 @@
+<script>
+  function min(arr) {
+    let output = arr[0];
+
+    for(const item of arr) {
+      if(output > item) {
+        output = item;
+      }
+    }
+    return output;
+  }
+
+  const arr = [13, 2, -100, 200, 32, 123];
+  console.log(`${arr}중에서 최솟값은`);
+  console.log(`${min(arr)}입니다.`)
+</script>

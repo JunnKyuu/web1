@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>div</title>
+  <style>
+    .container {
+      width: 800px; height: 400px;
+      background-color: white;
+    }
+    .leftBox {
+      width: 190px; height: 380px;
+      background-color: yellow;
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .insideLeffBox {
+      width: 180px; height: 175px;
+      background-color: blue;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .rightBox {
+      width: 190px; height: 380px;
+      background-color: red;
+      float: left;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .insideRightBoxTop {
+      width: 180px; height: 175px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      opacity: 0;
+    }
+    .insideRightBoxBottom {
+      width: 180px; height: 175px;
+      background-color: cyan;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .centerBox {
+      width: 380px; height: 380px;
+      background-color: green;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .centerTextBox {
+      width: 100px; height: 20px;
+      background-color: white;
+      margin-left: 7px;
+      margin-right: 7px;
+      float: left;
+      font-size: 18px;
+      text-align: center;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="leftBox">
+      사이드바 왼쪽
+      <div class="insideLeffBox">사이드바 왼쪽 위</div>
+      <div class="insideLeffBox">사이드바 왼쪽 아래</div>
+    </div>
+    <div class="centerBox">
+      <div class="centerTextBox">첫 번째 공간</div>
+      <div class="centerTextBox">두 번째 공간</div>
+    </div>
+    <div class="rightBox">
+      사이드바 오른쪽
+      <div class="insideRightBoxTop"></div>
+      <div class="insideRightBoxBottom">사이드바 오른쪽 아래</div>
+    </div>
+  </div>
+</body>
+</html>

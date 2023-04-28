@@ -1,0 +1,28 @@
+<script>
+  const max = function(...arr) {
+  let output = 0;
+  let items;
+  
+  if(typeof(arr[0]) != Number) {
+    let temp = arr[0];
+    for(let i = 0; i < 4; i ++) {
+      if(output < temp[i]) {
+        output = temp[i];
+      }
+    }
+  }
+
+  for(items of arr) {
+    if(output < items) {
+      output = items;
+    }
+   }
+  
+  
+  return output;
+}
+
+console.log(`max(배열): ${max([1,2,3,4])}`);
+console.log(`max(숫자, ...): ${max(1,2,3,4)}`);
+
+</script>
