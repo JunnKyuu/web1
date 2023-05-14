@@ -94,7 +94,7 @@
         this.changeScreen('battle');
         const randomIndex = Math.floor(Math.random() * this.monsterList.length);
         const randomMonster = this.monsterList[randomIndex];
-        this.monster = new Monster(
+        this.monster = new Monster (
           this,
           randomMonster.name,
           randomMonster.hp,
