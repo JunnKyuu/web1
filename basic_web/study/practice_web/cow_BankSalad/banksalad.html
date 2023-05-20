@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.ico">
+  <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./banksalad.css">
   <title>뱅크샐러드 | 금융을 넘어 건강 자산까지</title>
 </head>
@@ -34,8 +34,8 @@
         <a href="#">돈이 된다! 머니피드</a>
       </div>
     </nav>
-    <!-- carousel-->
-    <article id="first-article">
+    <!-- first-article-->
+    <article class="first-article">
       <div id="carousel-container" >
         <!-- carousel-item1 -->
         <section class="carousel-items" id="carousel-item1">
@@ -51,28 +51,24 @@
         </section>
         <!-- carousel-item2 -->
         <section class="carousel-items" id="carousel-item2">
-          <section id="carousel-card2">
-            <div id="carousel-title2">
-              <h2>대출 앞에 작아질 때!</h2>
-              <h1>뱅크샐러드 금융매칭</h1>
-              <p>1분만에,은행 방문 없이,신용점수 영향 없이</p>
-            </div>
-            <div class="carousel-btn">
-              <button id="btn2" type="button" onclick="location.href='#'">내 최저금리 조회하기</button>
-            </div>
-          </section>
+          <div id="carousel-title2">
+            <h2>대출 앞에 작아질 때!</h2>
+            <h1>뱅크샐러드 금융매칭</h1>
+            <p>1분만에,은행 방문 없이,신용점수 영향 없이</p>
+          </div>
+          <div class="carousel-btn">
+            <button id="btn2" type="button" onclick="location.href='#'">내 최저금리 조회하기</button>
+          </div>
         </section>
         <!-- carousel-item3 -->
         <section class="carousel-items" id="carousel-item3">
-          <section id="carousel-card3">
-            <div id="carousel-title3">
-              <h1>이벤트 응모하고</h1>
-              <h1>카드 사용하면</h1>
-              <h1>최대 73만원 받아요!</h1>
-              <p>기간 한정 이벤트이니 지금 참여하세요.</p>
-              <button id="btn3" type="button" onclick="location.href='#'">이벤트 보기</button>
-            </div>
-          </section>
+          <div id="carousel-title3">
+            <h1>이벤트 응모하고</h1>
+            <h1>카드 사용하면</h1>
+            <h1>최대 73만원 받아요!</h1>
+            <p>기간 한정 이벤트이니 지금 참여하세요.</p>
+            <button id="btn3" type="button" onclick="location.href='#'">이벤트 보기</button>
+          </div>
         </section>
       </div>
       <!-- carousel-slide-button -->
@@ -88,7 +84,44 @@
         </div>
       </div>
     </article>
+    <!-- second-article-->
+    <article class="second-article">
+      <div class="second-article-container">
+        <section>
+          <div id="second-title">
+            <p>내게 맞는 금융상품, 비교하기 힘드시죠?</p>
+            <h1>뱅크샐러드는 쉽고 정확하게 비교합니다.</h1>
+          </div>
+        </section>
+        <section>
+          <div class="second-item-container">
+            <div class="second-items">
+              <img src="./assets/second-article-item1.png" alt="second-item1">
+              <p>국내 최대 금융상품 데이터</p>
+              <p>금융 상품 데이터뿐만 아니라, 전월 실적,</p>
+              <p>한도 조건 등 복잡하고 어려운 금융상품의</p>
+              <p>각종 조건 데이터까지 모두 챙겼습니다.</p>
+            </div>
+            <div class="second-items">
+              <img src="./assets/second-article-item2.png" alt="second-item2">
+              <p>나만을 위한 금융매칭</p>
+              <p>수백만가지 경우의 수를 계산하는 추천</p>
+              <p>알고리즘이 나를 위한 맞춤 상품을</p>
+              <p>찾아드립니다.</p>
+            </div>
+            <div class="second-items">
+              <img src="./assets/second-article-item3.png" alt="second-item3">
+              <p>광고나 홍보 없음</p>
+              <p>뱅크샐러드의 추천에는 광고도, 홍보도</p>
+              <p>없습니다. 오직 객관적인 데이터만을</p>
+              <p>활용합니다.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
   </div>
+  <!-- js파일 연결 -->
   <script src="./banksalad.js"></script>
 </body>
 </html>
