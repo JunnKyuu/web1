@@ -612,3 +612,105 @@ a:hover {
   padding-top: 5px;
   padding-right: 10px;
 }
+
+.fifth-article {
+  position: absolute;
+  top: 2155px;
+  width: 100%;
+  height: 296px;
+  background-color: #ffffff;
+}
+
+.alliance-wrap {
+  width: 100%;
+  height: 190px;
+}
+
+#alliance-content {
+  position: relative;
+  top: 70px;
+  left: 500px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  width: 280px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+#shinhan {
+  width: 156px;
+  height: 37px;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  background-image: url('./assets/shinhan_gray.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+#samsung {
+  width: 118px;
+  height: 15px;
+  position: absolute;
+  top: 160px;
+  left: 50px;
+  background-image: url('./assets/samsung_gray.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+#nh {
+  width: 111px;
+  height: 24px;
+  position: absolute;
+  top: 50px;
+  right: 120px;
+  background-image: url('./assets/nh_gray.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+#lotte {
+  width: 140px;
+  height: 14px;
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  background-image: url('./assets/lotte_gray.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+#hyundai {
+  width: 184px;
+  height: 37px;
+  position: absolute;
+  top: 150px;
+  right: 140px;
+  background-image: url('./assets/hyundai_gray.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.contact-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 106px;
+  background-color: #eef8f8;
+}
+
+#contact-content {
+  color: #318cb4;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+}
