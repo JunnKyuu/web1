@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./login.css" rel="stylesheet">
+  <title>Login</title>
+</head>
+<body>
+  <div class="wrap">
+    <!-- nav-bar -->
+    <nav class="nav-bar">
+      <button id="login-btn">Login</button>
+      <button id="logout-btn">Logout</button>
+    </nav>
+  </div>
+  <!-- login-modal -->
+  <div id="login-bg"></div>
+  <div id="login-wrap">
+    <div class="login-container">
+      <div id="login-title">
+        <h1>Login</h1>
+      </div>
+      <form onsubmit="return false;">
+        <input type="text" class="login-info" id="id"></input>
+        <input type="password" class="login-info" id="pw"></input>
+        <div id="checkbox-container">
+          <label><input type="checkbox" id="login-checkbox" name="save-id" value="save"></input> 아이디 저장하기</label>
+        </div>
+        <input type="submit" class="login-info" id="info-submit" value="Login"></input>
+      </form>
+    </div>
+    <button id="login-close">X</button>
+  </div>
+  <!-- js -->
+  <script src="./login.js"></script>
+</body>
+</html>
