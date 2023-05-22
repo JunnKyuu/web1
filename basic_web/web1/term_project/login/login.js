@@ -5,6 +5,7 @@ const $logoutBtn = document.getElementById('logout-btn');
 const $loginId = document.getElementById('id');
 const $loginPw = document.getElementById('pw');
 const $loginSubmit = document.getElementById('info-submit');
+const $checkbox = document.getElementById('login-checkbox');
 const userId = '';
 const userPw = '';
 
@@ -31,8 +32,10 @@ $loginSubmit.addEventListener('click', () => {
     alert(userId + '님 안녕하세요!');
   }
 
-  $loginId.value = null;
-  $loginPw.value = null;
+  if(!($checkbox.checked)) {
+    $loginId.value = null;
+    $loginPw.value = null;
+  }
 });
 
 $logoutBtn.addEventListener('click', () => {
