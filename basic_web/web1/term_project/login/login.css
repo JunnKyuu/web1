@@ -88,7 +88,6 @@
   transform: translate(-50%,-50%);
   width: 85%;
   height: 85%;
-  /* background-color: #FFE9E9; */
 }
 
 #login-close {
@@ -170,8 +169,8 @@ input:focus {
 }
 
 #info-submit:hover {
-  background-color: #E7DBDB;
-  color: #ffffff;
+  background-color: #f7a7a7;
+  color: #FFE9E9;
 }
 
 #info-submit:active {

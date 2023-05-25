@@ -29,7 +29,11 @@ $loginSubmit.addEventListener('click', () => {
     $logoutBtn.style.display = 'block';
     $loginWrap.style.display = 'none';
 
-    alert(userId + '님 안녕하세요!');
+    Swal.fire({
+      icon: 'success',                         
+      title: '로그인 성공',         
+      text: userId + '님 안녕하세요!', 
+    });
   }
 
   if(!($checkbox.checked)) {
@@ -39,9 +43,26 @@ $loginSubmit.addEventListener('click', () => {
 });
 
 $logoutBtn.addEventListener('click', () => {
-  if(confirm('로그아웃 하시겠습니까?') == true) {
-    $loginWrap.style.display = 'block';
-    $loginBtn.style.display = 'block';
-    $logoutBtn.style.display = 'none';
-  } 
+  Swal.fire({
+    title: '정말로 로그아웃 하시겠습니까?',
+    text: "확인을 누르면 로그아웃이 진행됩니다.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: '확인',
+    cancelButtonText: '취소'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        '로그아웃 성공.',
+        '로그아웃 되었습니다.',
+        'success'
+      );
+
+      $loginWrap.style.display = 'block';
+      $loginBtn.style.display = 'block';
+      $logoutBtn.style.display = 'none';
+    }
+  });
 });
