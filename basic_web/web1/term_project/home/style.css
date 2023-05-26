@@ -1,0 +1,230 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jua', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbfb;
+}
+#footer {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue,
+    Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+}
+button {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+}
+#HomepageHeader {
+  width: 100%;
+  height: 150px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #HeaderText {
+} */
+h1 {
+  font-size: 64px;
+}
+li {
+  list-style: none;
+}
+
+nav {
+  /* max-width: 1400px;
+  margin: 0 auto; */
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffe9e9;
+  font-size: 24px;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+}
+#HomeListContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: inherit;
+  flex: 1;
+}
+#Homelist {
+  display: flex;
+}
+.list {
+  height: inherit;
+  margin: 0 40px;
+  cursor: pointer;
+}
+.list:hover {
+  color: white;
+}
+
+#LoginContainer {
+  margin-right: 50px;
+}
+#IntroduceContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+#SlideContainer {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 300%;
+  overflow-x: hidden;
+  height: 600px;
+  white-space: nowrap;
+}
+
+#IntroduceSlide {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/flower.png);
+  background-repeat: no-repeat;
+  background-size: 2000px 600px;
+  opacity: 0.7;
+  overflow: hidden;
+}
+.slide {
+  height: 600px;
+  width: 100%;
+}
+#introduce {
+  font-size: 100px;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+#slide2 {
+  background: url(./assets/family.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+#slide3 {
+  background: url(./assets/summer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.7;
+}
+
+#buttonList {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.screenButtonContainer {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.screenButton {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  color: transparent;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 0;
+}
+#button2,
+#button3 {
+  margin-left: 16px;
+}
+
+#pictureSection {
+  background-color: #fbfbfb;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 50px 200px;
+}
+
+#selector {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(117, 117, 168);
+  margin-bottom: 30px;
+}
+
+#picturelists {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+.picture {
+  width: 300px;
+  height: 350px;
+  background-color: #faf2f1;
+  text-align: center;
+}
+
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  cursor: default;
+}
+#footerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px 150px;
+  background-color: #e4e0e0;
+  font-size: 9px;
+  color: #707070;
+  line-height: 20px;
+}
+
+#footerContainer h3 {
+  font-family: 'verdana';
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.info {
+  margin-top: 20px;
+}
+
+#customer,
+#pageDevelop {
+  position: relative;
+  padding-left: 20px;
+}
+
+#snsicon {
+  padding-top: 5px;
+}
+.iconlink {
+  padding-right: 7px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}

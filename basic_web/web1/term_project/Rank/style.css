@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+
+@font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    background-color: #FFE9E9;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#navList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 0px 40px;
+    list-style-type: none;
+}
+
+.list:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#RANK {
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#loginButton {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#loginButton > li > a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+#chooseSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #E7DBDB;
+    height: 300px;
+    padding-top: 60px;
+}
+
+#text_1 {
+    font-size: 64px;
+}
+
+#chooseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E6DEE7;
+    width: 250px;
+    height: 120px;
+    border: 1px solid #928A96;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.ranking {
+    margin: 70px 0px;
+}
+
+.line_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-color: #f5f5f5;
+    width: 380px;
+    height: 380px;
+    border-radius: 15px;
+    border-bottom: 70px solid #E7DBDB;
+    cursor: pointer;
+}
+
+.giftName {
+    position: relative;
+    top: 268px;
+    font-size: 24px;
+}
+
+.ordinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -28px;
+    right: 135px;
+
+    background-color: #FEFFDB;
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #B9ADAD;
+    height: 80px;
+}
+
+
+
+
+
+
+#popup {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 700px;
+    margin-top: -350px;
+    z-index: 10;
+
+    background: #FAF2F1;
+    border-radius: 20px;
+
+}
+
+#img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-color: #FAF2F1;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+#productName {
+    font-size: 25px;
+}
+
+#linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E6DEE7;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#closeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #B9ADAD;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}

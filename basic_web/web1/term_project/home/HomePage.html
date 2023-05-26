@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFT TO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="HomepageHeader">
+      <div id="HeaderText"><h1>GIFT TO</h1></div>
+    </header>
+    <nav>
+      <div id="HomeListContainer">
+        <ul id="Homelist">
+          <li class="list"><b onclick="location.href='HomePage.html'">HOME</b></li>
+          <li class="list"><b onclick="location.href='../Rank/rank.html'">RANK</b></li>
+          <li class="list"><b onclick="location.href='../choose/index.html'">CHOOSE</b></li>
+          <li class="list"><b onclick="location.href='../my/my.html'">MY</b></li>
+        </ul>
+      </div>
+      <div id="LoginContainer">
+        <span class="list"><b id="login-btn">LOGIN</b></span>
+      </div>
+<!--      &lt;!&ndash; login-modal &ndash;&gt;-->
+<!--      <div id="login-wrap">-->
+<!--        <div class="login-container">-->
+<!--          <div id="login-title">-->
+<!--            <h1>Login</h1>-->
+<!--          </div>-->
+<!--          <form onsubmit="return false;">-->
+<!--            <input type="text" class="login-info" id="id"></input>-->
+<!--            <input type="password" class="login-info" id="pw"></input>-->
+<!--            <div id="checkbox-container">-->
+<!--              <label><input type="checkbox" id="login-checkbox" name="checkbox" value='checked'></input> 아이디 저장하기</label>-->
+<!--            </div>-->
+<!--            <input type="submit" class="login-info" id="info-submit" value="Login"></input>-->
+<!--          </form>-->
+<!--        </div>-->
+<!--        <button id="login-close">X</button>-->
+<!--      </div>-->
+    </nav>
+    <div id="IntroduceContainer">
+      <div id="SlideContainer">
+        <div id="IntroduceSlide" class="slide">
+          <span id="introduce">CHOOSE A GIFT HERE!</span>
+        </div>
+        <div id="slide2" class="slide"></div>
+        <div id="slide3" class="slide"></div>
+      </div>
+      <ul id="buttonList">
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button1"></button>
+        </li>
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button2"></button>
+        </li>
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button3"></button>
+        </li>
+      </ul>
+    </div>`
+    <section id="pictureSection">
+      <div id="pictureContainer">
+        <ul id="picturelists">
+          <li class="picture"><div id="RankPicture">Rank</div></li>
+          <li class="picture"><div id="ChoosePicture">Choose</div></li>
+          <li class="picture"><div id="MyPicture">My</div></li>
+        </ul>
+      </div>
+    </section>
+    <footer id="footer">
+      <div id="footerContainer">
+        <!-- 개발자 정보 -->
+        <div id="developerInform">
+          <h3>WEBPROJECT INFORMATION</h3>
+          <div>Developer : 이준규, 이서현, 홍정우, 이기택, 고선제</div>
+
+          <div class="info">
+            팀명: GIFT TO/ 팀장: 이준규 <br />
+            소속: 명지대학교 인문캠퍼스 융합소프트웨어학과 <br />
+            전화번호 : 010-3926-1344 <br />
+            이메일: kosunje1344@naver.com <br />
+            WebProgrmming PROJECT SINCE 2023
+          </div>
+        </div>
+        <!-- 문의 연락처, 출시일 -->
+        <div id="customer" class="footerinfos">
+          <h3>FOR CUSTOMER</h3>
+          <div id="time">
+            문의시간 <br />
+            평일 : ALL TIME <br />
+            주말 : ALL TIME <br />
+            OPEN EVERYDAY
+          </div>
+          <div id="snsicon">
+            <a href="" class="iconlink">
+              <img src="./assets/facebook.svg" alt="" class="icon" />
+            </a>
+            <a href="" class="iconlink">
+              <img src="./assets/instagram.png" alt="" class="icon" />
+            </a>
+          </div>
+        </div>
+
+        <div id="pageDevelop" class="footerinfos">
+          <h3>PAGE DEVELOPER</h3>
+          HOME : 고선제 <br />
+          RANK : 이기택 <br />
+          LOGIN AND DATA SURVEY : 이준규 <br />
+          MY AND RESULT : 이서현 <br />
+          CHOOSE : 홍정우
+        </div>
+      </div>
+    </footer>
+
+    <script src="./hompage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+        rel="stylesheet"
+    />
+    <title>Choose</title>
+</head>
+<body>
+    <nav>
+        <div id="HomeListContainer">
+          <ul id="Homelist">
+              <li class="list"><b onclick="location.href='../home/HomePage.html'">HOME</b></li>
+              <li class="list"><b onclick="location.href='../Rank/rank.html'">RANK</b></li>
+              <li class="list"><b onclick="location.href='../choose/index.html'">CHOOSE</b></li>
+              <li class="list"><b onclick="location.href='../my/my.html'">MY</b></li>
+          </ul>
+        </div>
+        <div id="LoginContainer">
+          <span class="list"><b>LOGIN</b></span>
+        </div>
+    </nav>
+    <h1 style="margin: 20px" id="recommend-title">선물을 추천해드릴게요!</h1>
+    <div id="BtnContainer">
+      <span>연령을 선택해주세요</span>
+      <div id="AgeBtnContainer">
+        <input type="radio" id="10", name="age", value="young" onclick="setAge()"/>
+        <label for="10">10대</label>
+        <input type="radio" id="20", name="age", value="young" onclick="setAge()"/>
+        <label for="20">20대</label>
+        <input type="radio" id="30", name="age", value="young" onclick="setAge()"/>
+        <label for="30">30대</label>
+        <input type="radio" id="40", name="age", value="old" onclick="setAge()"/>
+        <label for="40">40대</label>
+        <input type="radio" id="50", name="age", value="old" onclick="setAge()"/>
+        <label for="50">50대 이상</label>
+        <br>
+     </div>
+     <span id="genderText" style="visibility: hidden;">성별을 선택해주세요</span>
+      <div id="GenderBtnContainer">
+        <input type="radio" id="meticulous", name="characteristic", value="meticulous" onclick="setGender()"/>
+        <label for="meticulous">여자</label>
+        <input type="radio" id="useful", name="characteristic", value="useful" onclick="setGender()"/>
+        <label for="useful">남자</label>
+        <br>
+     </div>
+     <span id="priceText" style="visibility: hidden;">가격을 선택해주세요</span>
+     <div id="PriceBtnContainer">
+        <input type="radio" id="expensive", name="price", value="expensive" onclick="setPrice()"/>
+        <label for="expensive">높은 가격</label>
+        <input type="radio" id="cheap", name="price", value="cheap" onclick="setPrice()"/>
+        <label for="cheap">낮은 가격</label>
+        <br>
+      </div>
+      <span id="relationText" style="visibility: hidden;">관계를 선택해주세요</span>
+      <div id="RelationshipBtnContainer">
+        <input type="radio" id="colleague", name="relationship", value="public" onclick="setRelationship()"/>
+        <label for="colleague">직장 동료</label>
+        <input type="radio" id="boss", name="relationship", value="public" onclick="setRelationship()"/>
+        <label for="boss">상사</label>
+        <input type="radio" id="lover", name="relationship", value="private" onclick="setRelationship()"/>
+        <label for="lover">연인</label>
+        <input type="radio" id="family", name="relationship", value="private" onclick="setRelationship()"/>
+        <label for="family">가족</label>
+        <input type="radio" id="friend", name="relationship", value="private" onclick="setRelationship()"/>
+        <label for="friend">친구</label>
+        <br>
+      </div>
+    </div>
+    <input type="button" id="recommendBtn" value="추천!" onclick="recommend()">
+    <br>
+    <h1 id="text"></h1>
+    <div id="wrap">
+        <div id="result">
+            <header>
+                <div id="head">서현님에게 추천할 아이템은?</div>
+            </header>
+            <article>
+                <section>
+                    <div id="pic"></div>
+                </section>
+                <section>
+                    <div id="description"></div>
+                </section>
+            </article>
+            <footer>
+                <div id="button">
+                    <button id="restart">다시 추천해주세요!</button>
+                </div>
+                <div id="button">
+                    <button id="ok">확인</button>
+                    <button id="copy">복사하기</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="recommend.js"></script>
+</body>
+</html>

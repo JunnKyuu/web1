@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+        rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <title>GIFT TO</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="navList">
+            <li class="list"><b onclick="location.href='../home/HomePage.html'">HOME</b></li>
+            <li class="list"><b onclick="location.href='../Rank/rank.html'">RANK</b></li>
+            <li class="list"><b onclick="location.href='../choose/index.html'">CHOOSE</b></li>
+            <li class="list"><b onclick="location.href='../my/my.html'">MY</b></li>
+        </ul>
+        <ul id="loginButton">
+            <li><a href="">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <div id='chooseSection'>
+        <div id=text_1>선물이 고민된다면?</div>
+        <a id=chooseButton href="">추천받기</a>
+    </div>
+
+    <div class=ranking>
+        <div class=line_1>
+            <div class=gift id=rank_1 onclick="showPopup(this.id)">
+                <div class=ordinal>1</div>
+                <div class=giftName>제품명</div>
+            </div>
+
+            <div class=gift id=rank_2 onclick="showPopup(this.id)">
+                <div class=ordinal>2</div>
+                <div class=giftName>제품명</div>
+            </div>
+
+            <div class=gift id=rank_3 onclick="showPopup(this.id)">
+                <div class=ordinal>3</div>
+                <div class=giftName>제품명</div>
+            </div>
+
+        </div>
+        <div class=line_2>
+            <div class=gift id=rank_4 onclick="showPopup(this.id)">
+                <div class=ordinal>4</div>
+                <div class=giftName>제품명</div>
+            </div>
+
+            <div class=gift id=rank_5 onclick="showPopup(this.id)">
+                <div class=ordinal>5</div>
+                <div class=giftName>제품명</div>
+
+            </div>
+
+            <div class=gift id=rank_6 onclick="showPopup(this.id)">
+                <div class=ordinal>6</div>
+                <div class=giftName>제품명</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>정보</footer>
+
+    <div id='popup'>
+        <div id='img'></div>
+        <div id='productName'>제품명</div>
+        <div id='linkButton' href="">구매하러가기</div>
+        <div id='closeButton'>닫기</div>
+    </div>
+
+</body>
+
+</html>
