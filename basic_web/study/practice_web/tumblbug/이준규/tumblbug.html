@@ -27,7 +27,13 @@
                 <div class="nav-bottom">
                     <div class="nav-category-container">
                         <div class="category-box" id="category">
-                            <a href="#">﹦ 카테고리</a>
+                            <svg width="25" height="25" viewBox="0 0 48 48"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="11" width="30" height="4" fill="black"></rect>
+                                <rect x="9" y="22" width="30" height="4" fill="black"></rect>
+                                <rect x="9" y="33" width="30" height="4" fill="black"></rect>
+                            </svg>
+                            <a href="#">카테고리</a>
                         </div>
                         <div class="category-box" id="home">
                             <a href="#">홈</a>
@@ -49,25 +55,67 @@
                         </div>
                     </div>
                     <div class="search">
-
+                        <p>검색어를 입력해주세요.</p>
+                        <svg width="25" height="25" viewBox="0 0 48 48"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M29.9979 32.9819C27.3165 34.9694 23.9582
+                                  36.0788 20.3642 35.9089C12.0892 35.5176 5.69811
+                                  28.4922 6.08938 20.2171C6.48064 11.9421 13.5061
+                                  5.55107 21.7811 5.94234C30.0561 6.33361 36.4472
+                                  13.359 36.0559 21.6341C35.889 25.1636 34.5152
+                                  28.3505 32.3522 30.8144L39.4908 38.6856L37.1205
+                                  40.8353L29.9979 32.9819ZM32.6597 21.4735C32.3571
+                                  27.8728 26.9241 32.8152 20.5248 32.5127C14.1254
+                                  32.2101 9.183 26.7771 9.48558 20.3777C9.78816
+                                  13.9784 15.2212 9.03597 21.6205 9.33855C28.0199
+                                  9.64113 32.9623 15.0741 32.6597 21.4735Z">
+                            </path>
+                        </svg>
                     </div>
                 </div>
-
             </nav>
         </header>
         <!--main-->
         <div class="main-container">
-            <div class="main-middle">
-                <article class="main-banner">
+            <article class="main-middle">
+                <div class="main-banner">
+                    <div id="carousel">
+                        <img class="carousel-img" src="../images/banner1.jpg" alt="banner1">
+                        <img class="carousel-img" src="../images/banner2.jpg" alt="banner2">
+                        <img class="carousel-img" src="../images/banner3.jpg" alt="banner3">
+                        <img class="carousel-img" src="../images/banner4.jpg" alt="banner4">
+                    </div>
+                    <div id="carousel-btn-container">
+                        <button class="carousel-btn">
+                            <svg width="17" height="16" viewBox="0 0 17 16"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.7793 8.00016L9.77926 2.66683L10.7793
+                                      3.73354L6.77937 8.00016L10.7793 12.2668L9.77926
+                                      13.3335L4.7793 8.00016Z" fill="white">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn" id="carousel-btn2">
+                            <svg width="17" height="16" viewBox="0 0 17 16"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M4.7793 8.00016L9.77926 2.66683L10.7793
+                                      3.73354L6.77937 8.00016L10.7793 12.2668L9.77926
+                                      13.3335L4.7793 8.00016Z" fill="white">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-noticeable">
 
-                </article>
-                <article class="main-noticeable">
+                </div>
+            </article>
+            <article class="main-right">
 
-                </article>
-            </div>
-            <div class="main-right">
-
-            </div>
+            </article>
         </div>
     </div>
     <script src="./tumblbug.js"></script>
