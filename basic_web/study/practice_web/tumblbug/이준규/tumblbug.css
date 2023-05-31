@@ -230,8 +230,7 @@ header {
   width: 90%;
   height: 280px;
   margin-top: 15px;
-  overflow: hidden;
-  background-color: #dddddd;
+  /*overflow: hidden;*/
 }
 
 #carousel {
@@ -239,6 +238,8 @@ header {
   height: 100%;
   display: flex;
   flex-direction: row;
+  transition: transform 0.5s;
+  z-index: 999;
 }
 
 #carousel-btn-container {
@@ -275,13 +276,31 @@ header {
   background-color: #ffffff;
 }
 
-#carousel-btn2 {
+#carousel-btn-right {
   transform: rotate(180deg);
 }
 
-.carousel-img {
+.carousel-content {
   width: 25%;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#car1 {
+  background-image: url('../images/banner1.jpg');
+}
+
+#car2 {
+  background-image: url('../images/banner2.jpg');
+}
+
+#car3 {
+  background-image: url('../images/banner3.jpg');
+}
+
+#car4 {
+  background-image: url('../images/banner4.jpg');
 }
 
 .main-noticeable {
