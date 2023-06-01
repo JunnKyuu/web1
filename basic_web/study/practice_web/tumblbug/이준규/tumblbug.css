@@ -54,7 +54,7 @@ table {
 
 header {
   width: 100%;
-  height: 126px;
+  height: 136px;
 }
 
 .nav-upper{
@@ -115,12 +115,18 @@ header {
   border-radius: 5px;
 }
 
+#login-container > svg {
+  background-color: gainsboro;
+  border-radius: 50%;
+}
+
 #login-container > a {
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
   text-decoration-line: none;
   color: #000000;
+  margin-left: 10px;
 }
 
 .nav-bottom {
@@ -133,6 +139,15 @@ header {
   padding-right: 10px;
 }
 
+#divider {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #dddddd;
+  opacity: 30%;
+  margin-top: 10px;
+}
 .nav-category-container {
   display: flex;
   flex-direction: row;
@@ -210,7 +225,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: aquamarine;
 }
 
 .main-middle {
@@ -220,7 +234,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: white;
+  background: #dddddd;
   margin-left: 80px;
   margin-right: 30px;
 }
@@ -265,8 +279,25 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  right: 30px;
-  bottom: 70px;
+  right: 25px;
+  bottom: 60px;
+}
+
+#pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  
+  background-color: #302f2f;  
+  opacity: 70%;
+  margin-top: 6.5px;
+  margin-right: 9px;
 }
 
 .carousel-btn {
@@ -277,10 +308,10 @@ header {
   justify-content: center;
   align-content: center;
   border-radius: 100%;
-  background-color: #a2a0a0;
+  background-color: #302f2f;
   cursor: pointer;
   border: none;
-  opacity: 50%;
+  opacity: 70%;
   margin-left: 10px;
 }
 
@@ -329,14 +360,21 @@ header {
   width: 90%;
   height: 600px;
   margin-top: 15px;
-  background-color: blue;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.noticeable-title {
+  width: 100%;
+  height: 29px;
 }
 
 .main-right {
-  /*visibility: hidden;*/
+  /* visibility: hidden; */
   width: 35%;
   height: 925px;
-  background: white;
+  background: #dddddd;
   margin-right: 70px;
 }
 
