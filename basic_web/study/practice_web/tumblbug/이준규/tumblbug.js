@@ -6,13 +6,11 @@ let currentSlide = 1;
 $rightBtn.addEventListener('click', () => {
    clickRight();
    currentSlide ++;
-   console.log(currentSlide);
 });
 
 $leftBtn.addEventListener('click', () => {
     clickLeft();
     currentSlide --;
-    console.log(currentSlide);
 });
 
 const clickRight = () => {
@@ -26,6 +24,9 @@ const clickRight = () => {
         $carousel.style.transform = 'translateX(-75%)';
     }
     if(currentSlide === 4) {
+        $carousel.style.transform = 'translateX(-100%)';
+    }
+    if(currentSlide === 5) {
         $carousel.style.transform = 'translateX(0)';
         currentSlide = 0;
     }
@@ -33,8 +34,8 @@ const clickRight = () => {
 
 const clickLeft = () => {
     if(currentSlide === 1) {
-        $carousel.style.transform = 'translateX(-75%)';
-        currentSlide = 5;
+        $carousel.style.transform = 'translateX(-100%)';
+        currentSlide = 6;
     }
     if(currentSlide === 2) {
         $carousel.style.transform = 'translateX(0)';
@@ -45,4 +46,12 @@ const clickLeft = () => {
     if(currentSlide === 4) {
         $carousel.style.transform = 'translateX(-50%)';
     }
+    if(currentSlide === 5) {
+        $carousel.style.transform = 'translateX(-75%)';
+    }
 }
+
+// setInterval(() => {
+//     clickRight();
+//     currentSlide ++;
+// }, 4000);

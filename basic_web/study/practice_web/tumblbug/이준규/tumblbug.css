@@ -284,23 +284,27 @@ header {
   width: 25%;
   display: inline-block;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 704px 280px;
 }
 
 #car1 {
-  background-image: url('../images/banner1.jpg');
+  background-image: url('../images/carousel1.jpeg');
 }
 
 #car2 {
-  background-image: url('../images/banner2.jpg');
+  background-image: url('../images/carousel2.jpeg');
 }
 
 #car3 {
-  background-image: url('../images/banner3.jpg');
+  background-image: url('../images/carousel3.jpeg');
 }
 
 #car4 {
-  background-image: url('../images/banner4.jpg');
+  background-image: url('../images/carousel4.jpeg');
+}
+
+#car5 {
+  background-image: url('../images/carousel5.jpeg');
 }
 
 .main-noticeable {
