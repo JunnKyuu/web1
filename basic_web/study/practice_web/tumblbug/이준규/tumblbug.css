@@ -214,8 +214,7 @@ header {
 }
 
 .main-middle {
-  /*width: 60%;*/
-  width: 710px;
+  width: 780px;
   height: 925px;
   display: flex;
   flex-direction: column;
@@ -230,16 +229,35 @@ header {
   width: 90%;
   height: 280px;
   margin-top: 15px;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 #carousel {
-  width: 400%;
+  width: 500%;
   height: 100%;
   display: flex;
   flex-direction: row;
   transition: transform 0.5s;
-  z-index: 999;
+}
+
+.carousel-title {
+  width: 250px;
+  height: 120px;
+  position: relative;
+  top: 140px;
+  left: 20px;
+}
+
+.carousel-title > h1 {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 7px;
+}
+
+.carousel-title > p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px;
 }
 
 #carousel-btn-container {
@@ -281,7 +299,7 @@ header {
 }
 
 .carousel-content {
-  width: 25%;
+  width: 704px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 704px 280px;
@@ -315,7 +333,7 @@ header {
 }
 
 .main-right {
-  visibility: hidden;
+  /*visibility: hidden;*/
   width: 35%;
   height: 925px;
   background: white;
