@@ -615,3 +615,107 @@ header {
 .total-btn > button:active {
   background-color: rgb(190, 188, 188);
 }
+
+footer {
+  width: 100%;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffdfd;
+  border: 1px solid #dddddd;
+}
+
+.link-container {
+  width: 1150px;
+  height: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.link-contents1 {
+  width: 640px;
+  height: 186px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-contents2 {
+  width: 200px;
+  height: 186px;
+  background-color: #dddddd;
+  margin-left: 310px;
+}
+
+.link-content {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1 {
+  background-color: #dddddd;
+}
+
+.content2 {
+  background-color: #dddddd;
+}
+
+.content3 {
+  background-color: #dddddd;
+}
+
+.content4 {
+  background-color: #dddddd;
+}
+
+.link-titile {
+  width: 160px;
+  height: 30px;
+}
+
+.link-title > h1  {
+  color: rgb(61, 61, 61);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.link-text1 {
+  width: 160px;
+  height: 22px;
+  color: rgb(109, 109, 109);
+}
+
+.link-text2 {
+  width: 160px;
+  height: 22px;
+  color: rgb(109, 109, 109);
+
+}
+
+.link-text3 {
+  width: 160px;
+  height: 22px;
+  color: rgb(109, 109, 109);
+
+}
+
+.link-text4 {
+  width: 160px;
+  height: 22px;
+  color: rgb(109, 109, 109);
+
+}
+
+.link-text5 {
+  width: 160px;
+  height: 22px;
+  color: rgb(109, 109, 109);
+}
+
