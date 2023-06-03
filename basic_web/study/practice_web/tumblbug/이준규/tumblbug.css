@@ -606,6 +606,7 @@ header {
   border: 1px solid rgb(202, 202, 202);
   background-color: #ffffff;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .total-btn > button:hover {
@@ -739,14 +740,84 @@ footer {
 
 .footer-center {
   width: 1160px;
-  height: 107px;
-  background-color: #3b3b3b;
+  height: 110px;
   margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-company {
+  width: 710px;
+  height: 70px;
+}
+
+.company {
+  width: 100%;
+  height: 20px;
+}
+
+.company-text {
+  color: #6d6d6d;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.em {
+  color: #3d3d3d;
+  font-weight: 500;
+}
+
+.sns {
+  width: 300px;
+  height: 70px;
+}
+
+.sns-btn {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sns-btn > button {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: #efefef;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns-icon {
+  fill: #9c9c9c;
 }
 
 .footer-bottom {
-  width: 1160px;
+  width: 100%;
   height: 56px;
-  background-color: #7f62cc;
+  background-color: #f0f0f0;
   margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-text-container {
+  width: 1160px;
+  height: 100%;
+}
+
+#bottom-text {
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: 100;
 }
