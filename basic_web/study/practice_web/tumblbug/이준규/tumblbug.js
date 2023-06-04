@@ -1,3 +1,4 @@
+// carousel
 const $rightBtn = document.getElementById('carousel-btn-right');
 const $leftBtn = document.getElementById('carousel-btn-left');
 const $carousel = document.getElementById('carousel');
@@ -66,3 +67,48 @@ setInterval(() => {
     clickRight();
     currentSlide ++;
 }, 4000);
+
+// current time
+const $currentTime = document.getElementById('current-time');
+let today = new Date();
+let year = today.getFullYear() - 2000;
+let month = today.getMonth() + 1;
+let date = today.getDate();
+let hour = today.getHours();
+let min = today.getMinutes();
+let sec = today.getSeconds();
+
+$currentTime.innerText = year + "." + month + "." + date 
+                        + " " + hour + ":" + min + ":" + sec + "기준";
+
+// category menu
+const $categoryBtn = document.getElementById('category');
+const $categoryMenu = document.getElementById('category-menu-container');
+
+$categoryBtn.addEventListener('mouseover', () => {
+    $categoryMenu.style.display = 'flex';
+});
+
+$categoryMenu.addEventListener('mouseleave', () => {
+    $categoryMenu.style.display = 'none';
+});
+
+// search-menu
+const $searchBtn = document.getElementById('search-svg');
+const $exit = document.querySelector('#header-svg2');
+const $main = document.querySelector('.main-container');
+const $footer = document.querySelector('footer');
+const $searchContainer = document.querySelector('.search-container');
+
+$searchBtn.addEventListener('click', () => {
+    console.log('hi');
+    $searchContainer.style.visibility = 'visible';
+    $main.style.visibility = 'hidden';
+    $footer.style.visibility = 'hidden';
+});
+
+$exit.addEventListener('click', () => {
+    $searchContainer.style.visibility = 'hidden';
+    $main.style.visibility = 'visible';
+    $footer.style.visibility = 'visible';
+});

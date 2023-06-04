@@ -68,7 +68,7 @@
                     </div>
                     <div class="search">
                         <p>검색어를 입력해주세요.</p>
-                        <svg width="25" height="25" viewBox="0 0 48 48"
+                        <svg id="search-svg" width="25" height="25" viewBox="0 0 48 48"
                              fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                   d="M29.9979 32.9819C27.3165 34.9694 23.9582
@@ -86,7 +86,244 @@
                         </svg>
                     </div>
                 </div>
-                <div id="divider"></div>
+                <div id="category-menu-container">
+                    <div class="category-menu">
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" 
+                                    clip-rule="evenodd" d="M16.4 9.6H9.6V16.4H16.4V9.6ZM8 
+                                    8V18H18V8H8Z" fill="#0D0D0D"></path><path fill-rule="evenodd" 
+                                    clip-rule="evenodd" d="M28.4 9.6H21.6V16.4H28.4V9.6ZM20 
+                                    8V18H30V8H20Z" fill="#0D0D0D"></path><path fill-rule="evenodd" 
+                                    clip-rule="evenodd" d="M16.4 21.6H9.6V28.4H16.4V21.6ZM8 
+                                    20V30H18V20H8Z" fill="#0D0D0D"></path><path 
+                                    d="M20 20H30V30H20V20Z" fill="#FF5757"></path>
+                                </svg>
+                            </div>
+                            <span class="category-text" id="category-total">전체</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/stationary.svg">
+                            </div>
+                            <span class="category-text">디자인 문구</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/food.svg">
+                            </div>
+                            <span class="category-text">푸드</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/publishing.svg">
+                            </div>
+                            <span class="category-text">출판</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/film.svg">
+                            </div>
+                            <span class="category-text">영화·비디오</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/board.svg">
+                            </div>
+                            <span class="category-text">보드게임·TRPG</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/charactor-goods.svg">
+                            </div>
+                            <span class="category-text">캐릭터·굿즈</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/perfumes-cosmetics.svg">
+                            </div>
+                            <span class="category-text">향수·뷰티</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/design.svg">
+                            </div>
+                            <span class="category-text">디자인</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/performing-art.svg">
+                            </div>
+                            <span class="category-text">공연</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/digital-game.svg">
+                            </div>
+                            <span class="category-text">디지털 게임</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/home-living.svg">
+                            </div>
+                            <span class="category-text">홈·리빙</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/fashion.svg">
+                            </div>
+                            <span class="category-text">의류</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/art.svg">
+                            </div>
+                            <span class="category-text">예술</span>
+                        </div>
+                        <div class="category-items"></div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/comics.svg">
+                            </div>
+                            <span class="category-text">웹툰·만화</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/tech-electronics.svg">
+                            </div>
+                            <span class="category-text">테크·가전</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/accessories.svg">
+                            </div>
+                            <span class="category-text">잡화</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/photography.svg">
+                            </div>
+                            <span class="category-text">사진</span>
+                        </div>
+                        <div class="category-items"></div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/webtoon-resource.svg">
+                            </div>
+                            <span class="category-text">웹툰 리소스</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/pet.svg">
+                            </div>
+                            <span class="category-text">반려동물</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/jewerly.svg">
+                            </div>
+                            <span class="category-text">주얼리</span>
+                        </div>
+                        <div class="category-items">
+                            <div class="categroy-svg">
+                                <img src="../images/music.svg">
+                            </div>
+                            <span class="category-text">음악</span>
+                        </div>
+                        <div class="category-items"></div>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <div class="search-header">
+                        <div class="header-content">
+                            <div class="header-svg">
+                                <svg id="header-svg1" viewBox="0 0 48 48"><path fill-rule="evenodd" clip-rule="evenodd" 
+                                    d="M21.8113 37.22C13.3064 37.22 6.4025 30.3161 6.4025 21.8113C6.4025 
+                                    13.3064 13.3064 6.4025 21.8113 6.4025C30.3161 6.4025 37.22 13.3064 
+                                    37.22 21.8113C37.22 30.3161 30.3161 37.22 21.8113 37.22ZM45.3246 
+                                    42.2229L37.22 34.1172C44.0239 25.6124 42.6231 13.1063 34.1182 
+                                    6.4025C30.9174 3.70097 26.714 2.20011 22.5117 2H21.8113H21.1109C10.805 
+                                    2.40023 2.40023 10.7049 2 21.0108V21.7112V22.3115C2.30017 33.2177 11.4053 
+                                    41.8226 22.3115 41.5225C26.614 41.4224 30.7163 39.9215 34.1182 37.22L42.2229
+                                    45.3246C43.1234 46.2251 44.4251 46.2251 45.3246 45.3246C46.2251 44.5242 
+                                    46.2251 43.1224 45.3246 42.2229Z"></path>
+                                </svg>
+                            </div>
+                            <span id="header-textbox">검색어를 입력해주세요.</span>
+                            <div class="header-svg">
+                                <svg id="header-svg2" viewBox="0 0 48 48"><path fill-rule="evenodd" clip-rule="evenodd" 
+                                    d="M45.1766 41.0846L28.1097 24.0186L45.1766 6.95266C46.2744 5.85485 
+                                    46.2744 4.05843 45.1766 2.86082C44.0778 1.66321 42.2824 1.76401 
+                                    41.0838 2.86082L24.0189 19.9268L6.95301 2.86082C5.8552 1.76401 4.05879 
+                                    1.76401 2.86119 2.86082C1.66358 3.95863 1.76338 5.75605 2.86119 
+                                    6.95266L19.9271 24.0186L2.86119 41.0846C1.76338 42.1834 1.76338 
+                                    43.9788 2.86119 45.1774C3.95899 46.2742 5.7554 46.2742 6.95301 
+                                    45.1774L24.0189 28.1104L41.0838 45.1774C42.1826 46.2742 43.979 46.2742 
+                                    45.1766 45.1774C46.2744 43.9788 46.2744 42.1834 45.1766 41.0846Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-body">
+                        <div class="body-title">
+                            <span id="body-title-popular">텀블벅 인기 검색어</span>
+                            <span id="body-current-time">06.04.18:00 기준</span>
+                        </div>
+                        <div class="body-content">
+                            <div class="body-items">
+                                <span class="body-rank">1</span>
+                                <span class="body-item-name">가방</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">6</span>
+                                <span class="body-item-name">타로</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">2</span>
+                                <span class="body-item-name">인형</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">7</span>
+                                <span class="body-item-name">반지</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">3</span>
+                                <span class="body-item-name">한복</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">8</span>
+                                <span class="body-item-name">가구</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">4</span>
+                                <span class="body-item-name">향수</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">9</span>
+                                <span class="body-item-name" id="rank-change-9">글입다</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank">5</span>
+                                <span class="body-item-name">꾸리</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                            <div class="body-items">
+                                <span class="body-rank" id="rank-10">10</span>
+                                <span class="body-item-name" id="rank-change-10">ai</span>
+                                <span class="body-rank-change">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         <!--main-->
@@ -266,11 +503,11 @@
             <article class="main-right">
                 <section class="popular-title">
                     <div id="p-title1">
-                        <h1>인기 프로젝트</h1>
-                        <p>23.06.02 01:47 기준</p>
+                        <button id="right-btn1">인기 프로젝트</button>
+                        <p id="current-time"></p>
                     </div>
                     <div id="p-title2">
-                        <p>전체보기</p>
+                        <button id="right-btn2">전체보기</button>
                     </div>
                 </section>
                 <section class="popular-project">
@@ -375,7 +612,6 @@
                 </section>
             </article>
         </div>
-        <div id="divider"></div>
         <!-- footer -->
         <footer>
             <div class="footer-top">
