@@ -44,19 +44,19 @@ table {
   border-spacing: 0;
 }
 
-/*header*/
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 header {
   width: 100%;
   height: 136px;
   box-shadow: 0px 5px 5px -2px gainsboro;
+  z-index: 100;
 }
 
 .nav-upper{
@@ -222,6 +222,11 @@ header {
   cursor: pointer;
 }
 
+.category-text:hover {
+  font-weight: 700;
+  color: rgb(255, 87, 87);
+}
+
 #category-total {
   font-weight: 700;
 }
@@ -262,7 +267,7 @@ header {
   top: 0;
   left: 0;
   visibility: hidden;
-  z-index: 999;
+  /* z-index: 999; */
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -409,7 +414,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: -1;
+  z-index: 100;;
   box-shadow: 0px 5px 5px -2px gainsboro;
 }
 
@@ -430,6 +435,7 @@ header {
   margin-top: 15px;
   margin-bottom: 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #carousel {
@@ -646,6 +652,7 @@ header {
   color: #000000;
   font-weight: bold;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .items-percent {
@@ -795,6 +802,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .popular-content > h1 {
@@ -883,7 +891,7 @@ footer {
   cursor: pointer;
 }
 
-.left-contents > h1,span:hover {
+.left-span:hover {
   font-weight: bolder;
 }
 

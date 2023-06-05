@@ -84,21 +84,24 @@ $currentTime.innerText = year + "." + month + "." + date
 // category menu
 const $categoryBtn = document.getElementById('category');
 const $categoryMenu = document.getElementById('category-menu-container');
+const $main = document.querySelector('.main-container');
 
 $categoryBtn.addEventListener('mouseover', () => {
     $categoryMenu.style.display = 'flex';
+    $main.style.zIndex = '-1';
 });
 
 $categoryMenu.addEventListener('mouseleave', () => {
     $categoryMenu.style.display = 'none';
+    $main.style.zIndex = '100';
 });
 
 // search-menu
 const $searchBtn = document.getElementById('search-svg');
 const $exit = document.querySelector('#header-svg2');
-const $main = document.querySelector('.main-container');
 const $footer = document.querySelector('footer');
 const $searchContainer = document.querySelector('.search-container');
+const $searchCurrentTime = document.querySelector('#body-current-time');
 
 $searchBtn.addEventListener('click', () => {
     console.log('hi');
@@ -112,3 +115,7 @@ $exit.addEventListener('click', () => {
     $main.style.visibility = 'visible';
     $footer.style.visibility = 'visible';
 });
+
+$searchCurrentTime.innerText = year + "." + month + "." + date 
+                        + " " + hour + ":" + min + ":" + sec + "기준";
+
