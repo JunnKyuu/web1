@@ -24,7 +24,7 @@
     </header>
     <!-- article -->
     <article class="signUp-container">
-      <section class="contents-box">
+      <section class="contents-box" id="title-box">
         <div class="title">
           <h1>회원가입</h1>
         </div>
@@ -70,10 +70,39 @@
           </svg>
         </div>
       </section>
-      <section class="contents-box">
-        <div class="title">
-          <h1>이메일</h1>
-        </div>
+      <section class="input-box">
+        <form>
+          <div class="contents-box title">
+            <h1>이메일</h1>
+            <p class="p-text">이메일 형식을 맞춰서 입력해주세요.</p>
+            <input class="input" id="email" type="email">
+          </div>
+          <div class="contents-box title">
+            <h1>비밀번호</h1>
+            <p class="p-text">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+            <input class="input" id="password" type="password">
+          </div>
+          <div class="contents-box title">
+            <h1>닉네임</h1>
+            <p class="p-text">자신을 잘 나타낼 수 있는 닉네임을 입력해주세요.</p>
+            <input class="input" id="nick-name" type="text">
+          </div>
+          <div class="contents-box title">
+            <h1>주소</h1>
+            <p class="p-text">
+              예시) 서울특별시 서대문구 거북골로 34 ICT융합대학 사무실
+            </p>
+            <input class="input" id="address-state" type="text">
+          </div>
+          <div class="contents-box title">
+            <h1>휴대폰번호</h1>
+            <p class="p-text">-를 제외한 번호만 입력해주세요.</p>
+            <input class="input" id="phone-number" type="text">
+          </div>
+          <div class="contents-box">
+            <input class="input" id="submit" type="submit" value="회원가입하기">
+          </div>
+        </form>
       </section>
     </article>
   </div>
