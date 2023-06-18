@@ -1,15 +1,21 @@
 const $submit = document.querySelector('#submit');
 
 $submit.addEventListener('click', () => {
-  let $email = document.querySelector('#email');
-  let $password = document.querySelector('#password');
-  let $nickName = document.querySelector('#nick-name');
-  let $address = document.querySelector('#address');
-  let $phoneNumber = document.querySelector('#phone-number');
+  Swal.fire({
+    icon: 'success',                         
+    title: '회원가입 성공',         
+    text: '환영합니다! :)', 
+  });
+  let $email = document.querySelector('#email').value;
+  let $password = document.querySelector('#password').value;
+  let $nickName = document.querySelector('#nick-name').value;
+  let $address = document.querySelector('#address').value;
+  let $phoneNumber = document.querySelector('#phone-number').value;
+  console.log($email);
+  console.log($password);
+  console.log($nickName);
+  console.log($address);
+  console.log($phoneNumber);
 });
 
-console.log($email);
-console.log($password);
-console.log($nickName);
-console.log($address);
-console.log($phoneNumber);
+

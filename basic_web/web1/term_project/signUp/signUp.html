@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
     rel="stylesheet"
   />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <title>GIFT TO</title>
 </head>
 <body>
@@ -71,11 +72,11 @@
         </div>
       </section>
       <section class="input-box">
-        <form onsubmit="alert('submit!');return false">
+        <form onsubmit="return false;">
           <div class="contents-box title">
             <h1>이메일</h1>
             <p class="p-text">이메일 형식을 맞춰서 입력해주세요.</p>
-            <input class="input" id="email" type="email">
+            <input class="input" id="email" type="email" placeholder="abcd@efgh.com">
           </div>
           <div class="contents-box title">
             <h1>비밀번호</h1>
@@ -90,17 +91,18 @@
           <div class="contents-box title">
             <h1>주소</h1>
             <p class="p-text">
-              예시) 서울특별시 서대문구 거북골로 34 ICT융합대학 사무실
+              올바른 주소를 입력해주세요.
             </p>
-            <input class="input" id="address" type="text">
+            <input class="input" id="address" type="text" placeholder="예시) 서울특별시 서대문구 거북골로 34">
           </div>
           <div class="contents-box title">
             <h1>휴대폰번호</h1>
             <p class="p-text">-를 제외한 번호만 입력해주세요.</p>
-            <input class="input" id="phone-number" type="text">
+            <input class="input" id="phone-number" type="text" placeholder="01012345678">
           </div>
           <div class="contents-box">
             <input class="input" id="submit" type="submit" value="회원가입하기">
+            <!-- <button id="submit"></button> -->
           </div>
         </form>
       </section>
