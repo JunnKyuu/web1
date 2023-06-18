@@ -71,7 +71,7 @@
         </div>
       </section>
       <section class="input-box">
-        <form>
+        <form onsubmit="alert('submit!');return false">
           <div class="contents-box title">
             <h1>이메일</h1>
             <p class="p-text">이메일 형식을 맞춰서 입력해주세요.</p>
@@ -80,19 +80,19 @@
           <div class="contents-box title">
             <h1>비밀번호</h1>
             <p class="p-text">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
-            <input class="input" id="password" type="password">
+            <input class="input" id="password" type="password" minlength="8">
           </div>
           <div class="contents-box title">
             <h1>닉네임</h1>
-            <p class="p-text">자신을 잘 나타낼 수 있는 닉네임을 입력해주세요.</p>
-            <input class="input" id="nick-name" type="text">
+            <p class="p-text">자신을 잘 나타낼 수 있는 2자리 이상 15자리 이하 닉네임을 입력해주세요.</p>
+            <input class="input" id="nick-name" type="text" minlength= "2" maxlength="15">
           </div>
           <div class="contents-box title">
             <h1>주소</h1>
             <p class="p-text">
               예시) 서울특별시 서대문구 거북골로 34 ICT융합대학 사무실
             </p>
-            <input class="input" id="address-state" type="text">
+            <input class="input" id="address" type="text">
           </div>
           <div class="contents-box title">
             <h1>휴대폰번호</h1>
