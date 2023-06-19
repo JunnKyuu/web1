@@ -1,0 +1,600 @@
+*{
+    margin:0;
+    font-family: 'Jua', sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffe9e9;
+    font-size: 24px;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+  }
+  li {
+    list-style: none;
+  }
+  li:nth-child(4){
+    color:white;
+  }
+  #HomeListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+    flex: 1;
+  }
+  #Homelist {
+    display: flex;
+  }
+  .list {
+    height: inherit;
+    margin: 0 40px;
+    cursor: pointer;
+  }
+  .list:hover {
+    color: white;
+  }
+  #LoginContainer {
+    margin-right: 50px;
+  }
+  header{
+    height:350px;
+    margin-top:60px;
+    position: relative;
+  }
+  /* #account{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+    width:100%;
+  }
+  #infor > h1{
+    text-align: center;
+  }
+  #face{
+    background-image: url();
+    background-color: #E7DBDB;
+    width:220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+  #infor h1 {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    float:bottom;
+    margin-top: 10px;
+  }
+  #order,#info,#point{
+    border:3px solid #E7DBDB;
+    border-radius: 20px;
+    height: 220px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  #harticle{
+    height: 500px;
+    justify-content: space-around;
+    background-color: #B9ADAD;
+  } 
+  #giftlistheader{
+    margin:20px 0 20px 80px;
+    border-radius: 18px;
+    height: 50px;
+    width:350px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 650;
+    padding:10px;
+    background-color: white;
+    display: inline-block;
+  }
+  #giftlist{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+  }
+  #giftlist > div{
+    margin-top: 30px;
+    border-radius: 18px;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+
+  } */
+  #infoContainer{
+    position: absolute;
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* visibility: hidden; */
+  }
+  #infoMain{
+    background-color: white;
+    width:100%;
+    height:auto;
+    display: flex;
+    position: absolute;
+  }
+  #myaside{
+    width:20%;
+    height: inherit;
+    background-color: white;
+  }
+  #myarticle{
+    width: 80%;
+    height: inherit;
+    display: block;
+  } 
+  #infonav{
+    width:100%;
+    height: auto;
+    margin: 30px 80px;
+    line-height: 40px;
+    margin-top: 55px;
+  }
+  .infoContent{
+    width: 100%;
+    margin-left: 10%;
+    height: auto;
+  }
+  #mybutton:hover{
+    color:rgb(252, 153, 231);
+  }
+  .infoContent:hover{
+    color:rgb(252, 153, 231);
+  }
+  #infonav h1{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .logininfo{
+    width:80%;
+    height: 150px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logininfowrap{
+    display: flex;
+    margin: 0px 40px;
+  }
+  #face2{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:rgba(203, 127, 140,0.3);
+    margin: 25px;
+    display: block;
+  }
+  #face2 i{
+    font-size: 80px;
+    color: white;
+    margin-top:20px;
+    margin-left: 16px;
+  }
+  #previewImg{
+    display: none;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:rgba(203, 127, 140,0.3);
+    margin-top: 15px;
+  }
+  #previewImg2{
+    display: none;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:rgba(203, 127, 140,0.3);
+    margin-top: 25px;
+  }
+  #infor2{
+    width:100px;
+    height: 150px;
+    display: block;
+  }
+  .name ul{
+    list-style: none;
+  }
+  #myarticle .name{
+    margin-top: 50px;
+  }
+  #profilearticle .name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #rightinfo{
+    margin-top: 55px;
+    margin-right: 80px;
+    display: flex;
+  }
+  #level,#pointbox{
+    font-size: 20px;
+    line-height: 35px;
+  }
+  #vertical{
+    font-size: 30px;
+    margin:0px 30px;
+  }
+  #rightinfo strong{
+    color:rgb(252, 153, 231);
+  }
+  #orderContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 170px;
+    /* background-color: rgba(235, 232, 232, 0.5); */
+    /* background-color:rgba(254, 186, 197, 0.2); */
+    background-color: rgba(255, 195, 188,0.2);
+    border-radius: 15px;
+    margin-left: 30px;
+  }
+  .orderContentWrap{
+    width: auto;
+    height: 170px;
+    list-style: none;
+    margin-top:105px;
+    text-align: center;
+  }
+  .orderContentWrap ul{
+    margin-right: 25px;
+  }
+  .ordertext{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 20px 40px 10px;
+  }
+  .orderContentWrap li{
+    font-size: 20px;
+    margin-bottom:10px;
+  }
+  .orderContentWrap strong{
+    font-weight: 600;
+    color:rgb(252, 153, 231);
+  }
+  #verticalorder{
+    font-size: 30px;
+  }
+  #infonav h2{
+    margin: 10px 0px;
+  }
+  #recommend{
+    width:80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }
+  .item{
+    width:300px;
+    height: 320px;
+    background-color: rgba(255, 195, 188,0.2);
+    border-radius: 15px;
+  }
+  .itemimg{
+    width:260px;
+    height: 200px;
+    background-image: url("");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin:10px 20px 10px;
+  }
+  .itemtext{
+    width:260px;
+    height: 80px;
+    background-color: rgba(203, 127, 140,0.3);
+    border-radius: 15px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  #recommendtext{
+    font-size: 25px;
+    font-weight: 600;
+    margin:20px 40px 0px;
+  }
+  .ordertext:hover{
+    color:rgb(252, 153, 231);
+  }
+  #profilearticle{
+    display: none;
+    width: 80%;
+    height: inherit;
+  }
+  #profileWrap{
+    width:80%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #profilehead{
+    margin-left: 30px;
+    width:auto;
+    height: auto;
+  }
+  #profiletext{
+    margin-bottom: 15px;
+  }
+  #profilearticle .logininfo{
+    border:none;
+    border-radius: 0;
+    box-shadow:  0 4px 4px -4px gainsboro;
+    width:98%;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding:20px 0;
+    height: auto;
+  }
+  #imageChangebutton{
+    width:90px;
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding:5px 5px;
+    margin-top: 5px;
+  }
+  .profileinfotext{
+    font-weight: 500;
+    font-size: 20px;
+    margin:10px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .profileContent{
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .profileContent > h2{
+    font-size: 14px;
+    color:gray;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .usernameWrap{
+    width:50%;
+    height: auto;
+    box-shadow:  0 4px 4px -4px gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    padding-bottom: 10px;
+  }
+  .username{
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  .change{
+    width:auto;
+    height: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    padding:8px 15px;
+    margin-right: 10px;
+  }
+  #username{
+    display: block;
+  }
+  .changeinput{
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    margin-top: 20px;
+    margin-left: 5px;
+    visibility: hidden;
+  }
+  .changeinput [type="submit"]{
+    margin-right: 20px;
+  }
+  #logininfoarticle{
+    display: none;
+    width: 80%;
+    height: inherit;
+  }
+  #orderarticle{
+    display: none;
+    width:80%;
+    height: inherit;
+  }
+  #orderWrap{
+    width:80%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #orderhead{
+    margin-left: 30px;
+    width:auto;
+    height: auto;
+  }
+  #ordertext{
+    margin-bottom: 15px;
+  }
+  #orderarticle .ordertext{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .orderitem{
+    width:80%;
+    height: auto;
+    margin-left: 40px;
+    border-width: 2px 0px 2px 0px;
+    border-color: gainsboro;
+    border-style: solid;
+  }
+  .orderitemimg{
+    width:300px;
+    height: 200px;
+    background-image: url() ;
+    margin:20px 0;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .orderitemname{
+    font-size: 15px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+  }
+  .orderitemprice{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  #orderarticle #orderContent{
+    margin-left: 45px;
+  }
+  #shippingarticle #orderContent{
+    margin-left: 45px;
+  }
+  #shippingarticle .ordertext{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #shippingarticle{
+    display: none;
+    width:80%;
+    height: inherit;
+  }
+  #shippingWrap{
+    width:80%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #shippinghead{
+    margin-left: 30px;
+    width:auto;
+    height: auto;
+  }
+  #shippingtext{
+    margin-bottom: 15px;
+  }
+  #basketarticle #orderContent{
+    margin-left: 45px;
+  }
+  #basketarticle .ordertext{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #basketarticle{
+    display: none;
+    width:80%;
+    height: inherit;
+  }
+  #basketWrap{
+    width:80%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #baskethead{
+    margin-left: 30px;
+    width:auto;
+    height: auto;
+  }
+  #baskettext{
+    margin-bottom: 15px;
+  }
+  .total{
+    width:80%;
+    height: auto;
+    margin-left: 40px;
+    border-width: 2px 0px 2px 0px;
+    border-color: gainsboro;
+    border-style: solid;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+  }
+  .totalprice{
+   font-size: 20px;
+   margin: 10px;
+  }
+  .totalprice b{
+    color:rgb(252, 153, 231);
+  }
+  #recommendarticle{
+    display: none;
+    width:80%;
+    height: inherit;
+  }
+  #recommendWrap{
+    width:80%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #recommendhead{
+    margin-left: 30px;
+    width:auto;
+    height: auto;
+  }
+  #recommendhtext{
+    margin-bottom: 15px;
+  }
+  #recommendarticle .ordertext{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #recommendarticle .item{
+   margin:10px;
+  }
+  #recommendarticle #recommend{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #face3{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:rgba(203, 127, 140,0.3);
+    margin: 25px;
+    display: block;
+  }
+  #face3 i{
+    font-size: 80px;
+    color: white;
+    margin-top:20px;
+    margin-left: 16px;
+  }
+  #infor3{
+    width:100px;
+    height: 150px;
+    display: block;
+  }
+  #fileUpload{
+    display: none;
+    margin-top: 10px;
+    margin-left: 2px;
+  }

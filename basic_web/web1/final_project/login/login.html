@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./login.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <title>GIFT TO</title>
+</head>
+<body>
+  <div class="wrap">
+    <!-- nav-bar -->
+    <nav class="nav-bar">
+      <button id="login-btn">HOME</button>
+      <button id="logout-btn">HOME</button>
+    </nav>
+  </div>
+  <!-- login-modal -->
+  <div id="login-wrap">
+    <div class="login-container">
+      <div id="login-title">
+        <h1>로그인</h1>
+      </div>
+      <form onsubmit="return false;">
+        <input type="text" class="login-info" id="id"></input>
+        <input type="password" class="login-info" id="pw"></input>
+        <div id="checkbox-container">
+          <label><input type="checkbox" id="login-checkbox" name="checkbox" value='checked'></input> 이메일 저장하기</label>
+        </div>
+        <div id="submit-container">
+          <button class="login-info-submit" id="signUp-btn">회원가입</button>
+          <input type="submit" class="login-info-submit" id="info-submit" value="로그인"></input>
+        </div>
+      </form>
+    </div>
+    <button id="login-close">X</button>
+  </div>
+  <script src="./login.js"></script>
+</body>
+</html>

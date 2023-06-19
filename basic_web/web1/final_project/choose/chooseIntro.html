@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="introStyle.css" />
+    <title>Choose</title>
+</head>
+<body>
+    <div id="header">Gift To</div>
+    <div id="introText"><h1>선물이 고민될 때</h1></div>
+    <div id="introText"><h1>"Gift To"가 선물을 추천해드릴게요</h1></div>
+    <div id="lastText"><h1>색다른 경험을 즐겨보세요</h1></div>
+
+    <script>
+        let observer = new IntersectionObserver((e)=> {
+            e.forEach((box)=>{
+                if(box.isIntersecting){
+                    box.target.style.opacity = 1;
+                } else {
+                    box.target.style.opacity = 0;
+                }
+            })
+        })
+
+        let observer2 = new IntersectionObserver((e)=> {
+            e.forEach((box)=>{
+                if(box.isIntersecting){
+                    box.target.style.opacity = 1;
+                    setTimeout('go_url()', 2000);
+                } else {
+                    box.target.style.opacity = 0;
+                }
+            })
+        })
+
+        let div = document.querySelectorAll('div')
+        observer.observe(div[0]);
+        observer.observe(div[1]);
+        observer.observe(div[2]);
+        observer2.observe(div[3]);
+
+        function go_url(){
+            location.href="choose.html"
+        }
+    </script>
+</body>
+</html>

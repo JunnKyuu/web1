@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFT TO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="HomepageHeader">
+      <div id="HeaderText"><h1>GIFT TO</h1></div>
+    </header>
+    <nav>
+      <div id="HomeListContainer">
+        <ul id="Homelist">
+          <li class="list"><a href="http://127.0.0.1:5500/Homepage/HomPage.html">HOME</a></li>
+          <li class="list"><a href="http://127.0.0.1:5500/Rank/rank.html">RANK</a></li>
+          <li class="list"><a href="http://127.0.0.1:5500/choose/chooseIntro.html">CHOOSE</a></li>
+          <li class="list"><a href="http://127.0.0.1:5500/MY/my.html">MY</a></li>
+        </ul>
+      </div>
+      <div id="LoginContainer">
+        <span class="list"><a href="../login/login.html">LOGIN</a></span>
+      </div>
+    </nav>
+    <div id="IntroduceContainer">
+      <div id="SlideContainer">
+        <div id="IntroduceSlide" class="slide">
+          <span class="slideText">CHOOSE A GIFT HERE!</span>
+        </div>
+        <div id="slide2" class="slide">
+          <span class="familyText">가정의 달 선물?</span>
+          <br>
+          <span class="familyText">GIFT TO에서!</span>
+        </div>
+        <div id="slide3" class="slide">
+          <span class="slideText summerText" id="summerText1" >한여름 선물?</span>
+          <br>
+          <span class="slideText summerText" > GIFT TO에서!</span>
+        </div>
+      </div>
+      <ul id="buttonList">
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button1"></button>
+        </li>
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button2"></button>
+        </li>
+        <li class="screenButtonContainer">
+          <button class="screenButton" id="button3"></button>
+        </li>
+      </ul>
+    </div>
+    <section id="pictureSection">
+      <span id="curTime" class="time">
+        00:00:00
+      </span>
+      <span class="time">기준</span>
+
+      <ul class="selectBar">
+        <li class="selectList">
+          <button class="selectButton" id="popularButton">
+            <span id="popularText" class="selectText">인기가 많은</span>
+          </button>
+        </li>
+        <li class="selectList">
+          <button class="selectButton" id="mostSelectButton">
+            <span id="mostSelectText"  class="selectText">가장 많이 선택된 선물</span>
+          </button>
+        </li>
+        <li class="selectList">
+          <button class="selectButton" id="goodReviewButton">
+            <span id="goodReviewText"  class="selectText">후기가 좋은</span>
+          </button>
+        </li>
+      </ul>
+
+      <div id="pictureContainer">
+        <ul class="picturelists" id="popular">
+          <li class="picture">
+            <a id="popular1" href="https://kream.co.kr/products/28029"><div class="back"><img src="./assets/popular1.webp" alt=""></div></a>
+            <div class="picturetext">1. 나이키 덩크 로우</div>
+          </li>
+          <li class="picture"><a id="popular2" href="https://smartstore.naver.com/cakefactoryd/best?cp=1&n_media=27758&n_query=케익팩토리&n_rank=1&n_ad_group=grp-a001-01-000000033739907&n_ad=nad-a001-01-000000240727607&n_keyword_id=nkw-a001-01-000005291025336&n_keyword=케익팩토리&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dlhol2cyo|ci%3D0yq0000OVk5yJ6VKBeWD|tr%3Dsa|hk%3D06919f0f8679c329ab611aecd11cce1f874b291d" ><div class="listpicture"><img src="./assets/popular2.jpg" alt=""></div></a>
+          <div class="picturetext">2. 도시락 레터링 케이크</div>
+          </li>
+          <li class="picture"><a id="popular3" href="https://www.maisonmargiela.com/ko-kr/four-stitches-카드-홀더-SA3VX0007P4455.html?dwvar_SA3VX0007P4455_color=T8013&dwvar_SA3VX0007P4455_size=UNI" ><div class="listpicture"><img src="./assets/popular3.jpg" alt=""></div></a>
+          <div class="picturetext">3. 메종 마르지엘라 카드 홀더</div>
+          </li>
+        </ul>
+        <ul class="picturelists" id="mostSelect">
+          <li class="picture"><a id="mostSelect1" href="https://himmune.co.kr/product/detail.html?product_no=588&cate_no=258&display_group=1"><div class="listpicture"><img src="./assets/mostSelect1.jpg" alt=""></div></a>
+          <div class="picturetext">1. 하이뮨 고단백 밸런스 음료</div>
+          </li>
+          <li class="picture"><a id="mostSelect2" href="https://kream.co.kr/products/28029" ><div class="back"><img src="./assets/popular1.webp" alt=""></div></a>
+          <div class="picturetext">2. 나이키 덩크 로우</div>
+          </li>
+          <li class="picture"><a id="mostSelect3" href="https://gift-pc.baemin.com/products?type=bm&sortTypes=STANDARD&themeGroups=13&from=Navigation"><div class="listpicture"><img src="./assets/goodReview1.jpg" alt=""></div></a>
+          <div class="picturetext">3. 배달의 민족 2만원권</div>
+          </li>
+        </ul>
+        <ul class="picturelists" id="goodReview">
+          <li class="picture"><a id="goodReviwe1" href="https://gift-pc.baemin.com/products?type=bm&sortTypes=STANDARD&themeGroups=13&from=Navigation"><div class="listpicture"><img src="./assets/goodReview1.jpg" alt=""></div></a>
+          <div class="picturetext">1. 배달의 민족 2만원권</div>
+          </li>
+          <li class="picture"><a id="goodReviwe2" href="https://www.maisonmargiela.com/ko-kr/four-stitches-카드-홀더-SA3VX0007P4455.html?dwvar_SA3VX0007P4455_color=T8013&dwvar_SA3VX0007P4455_size=UNI"><div class="listpicture"><img src="./assets/popular3.jpg" alt=""></div></a>
+          <div class="picturetext">2. 메종 마르지엘라 카드 홀더</div>
+          </li>
+          <li class="picture"><a id="goodReviwe3" href="https://himmune.co.kr/product/detail.html?product_no=588&cate_no=258&display_group=1"><div class="listpicture"><img src="./assets/mostSelect1.jpg" alt=""></div></a>
+          <div class="picturetext">3. 하이뮨 고단백 밸런스 음료</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer id="footer">
+      <div id="footerContainer">
+        <!-- 개발자 정보 -->
+        <div id="developerInform">
+          <h3>WEBPROJECT INFORMATION</h3>
+          <div>Developer : 이준규, 이서현, 홍정우, 이기택, 고선제</div>
+
+          <div class="info">
+            팀명: GIFT TO/ 팀장: 이준규 <br />
+            소속: 명지대학교 인문캠퍼스 융합소프트웨어학과 <br />
+            전화번호 : 010-3926-1344 <br />
+            이메일: kosunje1344@naver.com <br />
+            WebProgrmming PROJECT SINCE 2023
+          </div>
+        </div>
+        <!-- 문의 연락처, 출시일 -->
+        <div id="customer" class="footerinfos">
+          <h3>FOR CUSTOMER</h3>
+          <div id="time">
+            문의시간 <br />
+            평일 : ALL TIME <br />
+            주말 : ALL TIME <br />
+            OPEN EVERYDAY
+          </div>
+          <div id="snsicon">
+            [SNS] :
+            <a href="https://www.facebook.com/profile.php?id=100007913371347" class="iconlink" >
+              <img src="./assets/facebook.svg" alt="" class="icon" />
+            </a>
+            <a href="https://www.instagram.com/k_seon_j/" class="iconlink">
+              <img src="./assets/instagram.png" alt="" class="icon" />
+            </a>
+          </div>
+        </div>
+
+        <div id="pageDevelop" class="footerinfos">
+          <h3>PAGE DEVELOPER</h3>
+          HOME : 고선제 <br />
+          RANK : 이기택 <br />
+          LOGIN & DATA SURVEY : 이준규 <br />
+          MY & RESULT : 이서현 <br />
+          CHOOSE : 홍정우
+        </div>
+      </div>
+    </footer>
+
+    <script src="./hompage.js"></script>
+
+	</script> 
+  </body>
+</html>

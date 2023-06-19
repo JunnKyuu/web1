@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js"></script>
+    <title>GIFT TO</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul id="navList">
+        <li class="list">
+          <a href="http://127.0.0.1:5500/Homepage/HomPage.html">HOME</a>
+        </li>
+        <li class="list">
+          <a href="http://127.0.0.1:5500/Rank/rank.html">RANK</a>
+        </li>
+        <li class="list">
+          <a href="http://127.0.0.1:5500/choose/chooseIntro.html">CHOOSE</a>
+        </li>
+        <li class="list"><a href="http://127.0.0.1:5500/MY/my.html">MY</a></li>
+      </ul>
+      <ul id="loginButton">
+        <li><a href="">LOGIN</a></li>
+      </ul>
+    </nav>
+
+    <div class="selectSorting">
+      <div id="rankingList_1">
+        <span id="rankingList_text_1">많이 선물한</span>
+      </div>
+      <div id="rankingList_2">
+        <span id="rankingList_text_2">받고 만족한</span>
+      </div>
+    </div>
+
+    <div class="ranking">
+      <div id="ranking_text">RANKING</div>
+      <div class="slide">
+        <div class="gift" id="rank_1" onclick="showPopup(this)">
+          <div class="ordinal">1</div>
+          <div class="giftName">제품명</div>
+        </div>
+
+        <div class="gift" id="rank_2" onclick="showPopup(this)">
+          <div class="ordinal">2</div>
+          <div class="giftName">제품명</div>
+        </div>
+
+        <div class="gift" id="rank_3" onclick="showPopup(this)">
+          <div class="ordinal">3</div>
+          <div class="giftName">제품명</div>
+        </div>
+
+        <div class="gift" id="rank_4" onclick="showPopup(this)">
+          <div class="ordinal">4</div>
+          <div class="giftName">제품명</div>
+        </div>
+
+        <div class="gift" id="rank_5" onclick="showPopup(this)">
+          <div class="ordinal">5</div>
+          <div class="giftName">제품명</div>
+        </div>
+
+        <div class="gift" id="rank_6" onclick="showPopup(this)">
+          <div class="ordinal">6</div>
+          <div class="giftName">제품명</div>
+        </div>
+      </div>
+
+      <p class="controller">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+      </p>
+    </div>
+
+    <div id="chooseSection">
+      <div id="text_1">선물이 고민된다면?</div>
+      <a id="chooseButton" href="http://127.0.0.1:5500/choose/chooseIntro.html">추천받기</a>
+    </div>
+
+    <footer><div id="footerText">GIFT TO</div></footer>
+
+    <div id="popup">
+      <div id="img"></div>
+      <div id="productName">제품명</div>
+      <div id="linkButton" href="">구매하러가기</div>
+      <div id="closeButton">닫기</div>
+    </div>
+    <div id="popupBackground"></div>
+  </body>
+</html>

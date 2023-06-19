@@ -1,0 +1,30 @@
+body {
+  background-color: #FFE9E9;
+  height: 3800px;
+  font-family: 'Jua', sans-serif;
+}
+#introText {
+  font-size: 30px;
+  margin-top: 1000px;
+  color: black;
+  text-align: center;
+  opacity: 0;
+  transition: all 2s;
+}
+
+#lastText {
+  font-size: 30px;
+  margin-top: 1000px;
+  color: black;
+  text-align: center;
+  opacity: 0;
+  transition: all 2s;
+}
+
+#header {
+  font-size: 250px;
+  margin-top: 200px;
+  text-align: center;
+  opacity: 0;
+  transition: all 5s;
+}

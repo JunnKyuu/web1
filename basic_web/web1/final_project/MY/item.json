@@ -1,0 +1,165 @@
+{
+"items": 
+[{
+"attribute": "young",
+"name":"나이키 덩크 로우 레트로 블랙",
+"price":"125,000원",
+"link":"https://kream.co.kr/products/28029",
+"picture": "./assets/nike.webp"
+},
+{
+"attribute":"young",
+"name":"애플워치 스트랩 스톰 블루 솔로 루프",
+"price":"20,000원",
+"link":"https://gift-pc.baemin.com/products?type=bm&sortTypes=STANDARD&themeGroups=13&from=Navigation",
+"picture": "./assets/strap.jpeg"
+},
+{
+"attribute":"young",
+"name":"나그참파 인센스스틱 100g",
+"price":"23,800원",
+"link":"https://nagchampa.co.kr/product/나그참파코리아-나그참파-인센스-스틱-100g/30/category/24/display/1/",
+"picture": "./assets/nagchampa.jpeg"
+},
+{
+"attribute":"old",
+"name":"오설록 프리미엄 티 컬렉션",
+"price":"21,000원",
+"link":"https://www.osulloc.com/kr/ko/shop/item/teashop/15263",
+"picture": "./assets/tea.png"
+},
+{
+"attribute":"old",
+"name":"클럭 미니 마사지기S",
+"price":"75,000원",
+"link":"https://klug.kr/product/detail.html?product_no=21&utm_source=google&utm_medium=SA&cafe_mkt=google&utm_campaign=클럭_미니_SA_PC_메인&utm_content=A.자상호_전체^일치&utm_term=사이트링크&ctnakey=03-1674-4-456737&gclid=Cj0KCQjwsIejBhDOARIsANYqkD10mC08cUHJNwJlC_pg4pdlLx0OzCdTV2bfTJGY-wAxm0v4E54szkgaAuciEALw_wcB",
+"picture": "./assets/massage.jpeg"
+},
+{
+"attribute":"old",
+"name":"하이뮨 고단백 밸런스 음료 16팩",
+"price":"51,200원",
+"link":"https://himmune.co.kr/product/detail.html?product_no=588&cate_no=258&display_group=1",
+"picture": "./assets/himmune.jpeg"
+},
+{
+"attribute":"meticulous",
+"name":"MAC 러스터글래스 립스틱",
+"price":"38,000원",
+"link":"https://www.maccosmetics.co.kr/product/13854/88565/makeup/lustreglass-lipstick?shade=오%2C_구디",
+"picture": "./assets/lipstick.jpeg"
+},
+{
+"attribute":"meticulous",
+"name":"메리디아니 패브릭 기부 팔찌 - 흰둥이",
+"price":"29,900원",
+"link":"https://meridiani.co.kr/product/패브릭-팔찌-흰둥이silver-925/88/category/42/display/1/](https://meridiani.co.kr/product/%ED%8C%A8%EB%B8%8C%EB%A6%AD-%ED%8C%94%EC%B0%8C-%ED%9D%B0%EB%91%A5%EC%9D%B4silver-925/88/category/42/display/1/)",
+"picture": "./assets/meridiani.jpeg"
+},
+{
+"attribute":"meticulous",
+"name":"도시락 레터링 케이크(케익팩토리)",
+"price":"18,900원",
+"link":"https://smartstore.naver.com/cakefactoryd/best?cp=1&n_media=27758&n_query=케익팩토리&n_rank=1&n_ad_group=grp-a001-01-000000033739907&n_ad=nad-a001-01-000000240727607&n_keyword_id=nkw-a001-01-000005291025336&n_keyword=케익팩토리&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dlhol2cyo|ci%3D0yq0000OVk5yJ6VKBeWD|tr%3Dsa|hk%3D06919f0f8679c329ab611aecd11cce1f874b291d",
+"picture": "./assets/cake.jpeg"
+},
+{
+"attribute":"useful",
+"name":"신세계 상품권 5만원권",
+"price":"50,000원",
+"link":"https://www.shinsegae.com/service/membership/certificate.do",
+"picture": "./assets/shinsegae.png"
+},
+{
+"attribute":"useful",
+"name":"배달의 민족 2만원권",
+"price":"20,000원",
+"link":"https://gift-pc.baemin.com/products?type=bm&sortTypes=STANDARD&themeGroups=13&from=Navigation",
+"picture": "./assets/baemin.jpeg"
+},
+{
+"attribute":"useful",
+"name":"우르오스 스킨로션 200ml",
+"price":"23,800원",
+"link":"https://www.ulos.co.kr/goods/goods_list.php?cateCd=001",
+"picture": "./assets/ulos.jpeg"
+},
+{
+"attribute":"expensive",
+"name":"메종 마르지엘라 카드 홀더",
+"price":"379,000원",
+"link":"https://www.maisonmargiela.com/ko-kr/four-stitches-카드-홀더-SA3VX0007P4455.html?dwvar_SA3VX0007P4455_color=T8013&dwvar_SA3VX0007P4455_size=UNI",
+"picture": "./assets/margiela.jpeg"
+},
+{
+"attribute":"expensive",
+"name":"브라운 전기면도기 시리즈9 PRO 실버",
+"price":"613,000원",
+"link":"https://braun.kr/ko-kr/male-grooming/shavers-for-men/series-9",
+"picture": "./assets/shaver.webp"
+},
+{
+"attribute":"cheap",
+"name":"레토 무드등",
+"price":"14,900원",
+"link":"https://www.leto.co.kr/product/detail.html?product_no=544&cate_no=238&display_group=1",
+"picture": "./assets/leto.jpeg"
+},
+{
+"attribute":"cheap",
+"name":"논픽션 핸드크림",
+"price":"23,000원",
+"link":"https://nonfiction.com/product/list.html?cate_no=63",
+"picture": "./assets/handcream.jpeg"
+},
+{
+"attribute":"cheap",
+"name":"버츠비 립밤",
+"price":"4,900원",
+"link":"https://smartstore.naver.com/burtsbees/products/2198542914",
+"picture": "./assets/burtsbee.jpeg"
+},
+{
+"attribute":"pub",
+"name":"레토 센트룸 멀티 80구미",
+"price":"24,000원",
+"link":"https://brand.naver.com/centrum/products/6304004923",
+"picture": "./assets/gumi.jpeg"
+},
+{
+"attribute":"pub",
+"name":"라미 사파리 만년필 차콜",
+"price":"64,000원",
+"link":"https://lamyshop.kr/product/사파리-만년필-차콜블랙-ef/1625/category/44/display/1/",
+"picture": "./assets/pen.png"
+},
+{
+"attribute":"pub",
+"name":"현대식품관 과일세트",
+"price":"105,000원",
+"link":"https://www.thehyundai.com/front/pda/itemPtc.thd?slitmCd=40A1689258&sectId=&bfp=SearchList",
+"picture": "./assets/fruits.jpeg"
+},
+{
+"attribute":"pri",
+"name":"러쉬 더티 바디스프레이",
+"price":"60,000원",
+"link":"https://www.lush.co.kr/products/view/G21000003662?giftYn=Y&dc=",
+"picture": "./assets/dirty.jpeg"
+},
+{
+"attribute":"pri",
+"name":"casetify 핸드폰 케이스",
+"price":"88,500원",
+"link":"https://www.casetify.com/ko_KR/product/SqryY_casetify/iphone-14-pro/recasetify-ultra-impact-case#/16004878",
+"picture": "./assets/casetify.jpeg"
+},
+{
+"attribute":"pri",
+"name":"편지",
+"price":"∞",
+"link":"null",
+"picture": "./assets/letter.jpeg"
+}
+]
+}

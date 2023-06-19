@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT TO</title>
+    <link href="my.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div id="HomeListContainer">
+      <ul id="Homelist">
+        <li class="list">
+          <a href="http://127.0.0.1:5500/Homepage/HomPage.html">HOME</a>
+        </li>
+        <li class="list">
+          <a href="http://127.0.0.1:5500/Rank/rank.html">RANK</a>
+        </li>
+        <li class="list">
+          <a href="http://127.0.0.1:5500/choose/chooseIntro.html">CHOOSE</a>
+        </li>
+        <li class="list">
+          <a href="http://127.0.0.1:5500/MY/my.html">MY</a>
+        </li>
+      </ul>
+    </div>
+    <div id="LoginContainer">
+      <span class="list">LOGIN</span>
+    </div>
+  </nav>
+      <header>
+        <div id="infoContainer">
+          <div id="infoMain">
+            <aside id="myaside">
+              <div id="infonav">
+                <h1 id="mybutton">MY</h1>
+                <h2>내 정보</h2>
+                <div class="infoContent" id="profilebutton">프로필 관리</div>
+                <div class="infoContent" id="logininfobutton">로그인 정보 </div>
+                <h2>쇼핑 정보</h2>
+                <div class="infoContent" id="orderbutton">주문 내역</div>
+                <div class="infoContent" id="shippingbutton">배송 정보</div>
+                <div class="infoContent" id="basketbutton">장바구니</div>
+                <div class="infoContent" id="recommendbutton">추천 아이템</div>
+              </div>
+            </aside>
+
+            <article id="myarticle">
+              <div class="logininfo">
+                <div class="logininfowrap"> 
+                  <div id="infor3">
+                    <div id="face3">
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <img id="previewImg2" width="700" alt="이미지 영역" />
+                  <div class="name">
+                    <ul>
+                      <li class="loginusername">SEONY</li>
+                      <li class="loginuseremail">seohyun615@naver.com</li>
+                  </ul>
+                  </div>
+                </div>
+                <div id="rightinfo">
+                  <div id="level"><strong>1</strong> 레벨</div>
+                  <div id= vertical>|</div>
+                  <div id="pointbox"><strong>0</strong> P</div>
+                </div>
+              </div>
+              <h1 class="ordertext">주문 내역</h1>
+            <div id="orderContent">
+              <div class="orderContentWrap">
+                <ul>
+                  <li>구매</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>반품</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>환불</li>
+                  <li><strong>0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>미결제</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+            </div>
+            <h1 class="ordertext">배송 정보</h1>
+            <div id="orderContent">
+              <div class="orderContentWrap">
+                <ul>
+                  <li>상품 준비중</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>출고</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>배송중</li>
+                  <li><strong>0</strong></li>
+                </ul>
+              </div>
+              <div id="verticalorder">|</div>
+              <div class="orderContentWrap">
+                <ul>
+                  <li>배송 완료</li>
+                  <li><strong> 0</strong></li>
+                </ul>
+              </div>
+            </div>
+            <h1 class="ordertext">추천 아이템</h1>
+              <div id="recommend">
+                <div class="item" id="iiitem1">
+                  <div class="itemimg"></div>
+                  <div class="itemtext"></div>
+                </div>
+                <div class="item" id="iiitem2">
+                  <div class="itemimg"></div>
+                  <div class="itemtext"></div>
+                </div>
+                <div class="item" id="iiitem3">
+                  <div class="itemimg"></div>
+                  <div class="itemtext"></div>
+                </div>
+              </div>
+            </article>
+
+            <article id="profilearticle">
+              <div id="profileWrap">
+                <div id="profilehead">
+                  <h1 id="profiletext">프로필 관리</h1>
+                  <hr>
+                </div>
+              
+              <div class="logininfo">
+                <div class="logininfowrap"> 
+                  <div id="infor2">
+                    <div id="face2">
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                  <img id="previewImg" width="700" alt="이미지 영역" />
+                  <div class="name">
+                    <ul>
+                      <li id="loginusername">SEONY</li>
+                      <li id="imageChangebutton">이미지 변경</li>
+                      <input type="file" id="fileUpload" accept='image/*' />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="profileinfoWrap">
+              <h1 class="profileinfotext">프로필 정보</h1>
+              <div class="profileContent">
+                <h2>닉네임</h2>
+                <div class="usernameWrap" id="usernamebutton">
+                  <p class="username">이서니</p>
+                  <div class="change">변경</div>
+                </div>
+                <div class="changeinput" id="usernamebutton2">
+                  <input type="text" id="username" placeholder="새로운 닉네임을 입력해주세요">
+                  <input type="submit" class="submit">
+                </div>
+              </div>
+              <div class="profileContent">
+                <h2>이메일</h2>
+                <div class="usernameWrap" id ="useremailbutton">
+                  <p class="username">eeeseohyun@gmail.com</p>
+                  <div class="change">변경</div>
+                </div>
+                <div class="changeinput" id="useremailbutton2">
+                  <input type="text" id="username" placeholder="새로운 이메일을 입력해주세요">
+                  <input type="submit" class="submit">
+                </div>
+              </div>
+            </div>
+            </article>
+
+            <article id="logininfoarticle">
+              <div id="profileWrap">
+                <div id="profilehead">
+                  <h1 id="profiletext">로그인 정보</h1>
+                  <hr>
+                </div>
+                <div id="profileinfoWrap">
+                  <h1 class="profileinfotext">내 계정</h1>
+                  <div class="profileContent">
+                    <h2>아이디</h2>
+                    <div class="usernameWrap" id="useridbutton">
+                      <p class="username">eeeseohyun@gmail.com</p>
+                      <div class="change">변경</div>
+                    </div>
+                    <div class="changeinput" id="useridbutton2">
+                      <input type="text" id="username" placeholder="새로운 아이디을 입력해주세요">
+                      <input type="submit" class="submit">
+                    </div>
+                  </div>
+                  <div class="profileContent">
+                    <h2>비밀번호</h2>
+                    <div class="usernameWrap" id="passwordbutton">
+                      <p class="username">********</p>
+                      <div class="change">변경</div>
+                    </div>
+                    <div class="changeinput" id="passwordbutton2">
+                      <input type="text" id="username" placeholder="새로운 비밀번호를 입력해주세요">
+                      <input type="submit" class="submit">
+                    </div>
+                  </div>
+                  </div>
+                  <div id="profileinfoWrap">
+                    <h1 class="profileinfotext">개인정보</h1>
+                    <div class="profileContent">
+                      <h2>휴대폰 번호</h2>
+                      <div class="usernameWrap" id="phonenumbutton">
+                        <p class="username">010-1234-5678</p>
+                        <div class="change">변경</div>
+                      </div>
+                      <div class="changeinput" id="phonenumbutton2">
+                        <input type="text" id="username" placeholder="새로운 휴대폰번호를 입력해주세요">
+                        <input type="submit" class="submit">
+                      </div>
+                    </div>
+                    <div class="profileContent">
+                      <h2>주소</h2>
+                      <div class="usernameWrap" id="addressbutton">
+                        <p class="username">서울특별시 서대문구 거북골로 34</p>
+                        <div class="change">변경</div>
+                      </div>
+                      <div class="changeinput" id="addressbutton2">
+                        <input type="text" id="username" placeholder="새로운 주소를 입력해주세요">
+                        <input type="submit" class="submit">
+                      </div>
+                    </div>
+                    </div>
+              </div>
+            </article>
+
+            <article id="orderarticle">
+              <div id="orderWrap">
+                <div id="orderhead">
+                  <h1 id="ordertext">주문 내역</h1>
+                  <hr>
+                </div>
+                <h1 class="ordertext">주문 현황</h1>
+                <div id="orderContent">
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>구매</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>반품</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>환불</li>
+                      <li><strong>0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>미결제</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                </div>
+                <h1 class="ordertext">주문 상세</h1>
+                <div class="orderitem" id="item1">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+                <div class="orderitem" id="item2">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+                <div class="orderitem" id="item3">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+              </div>
+            </article>
+
+            <article id="shippingarticle">
+              <div id="shippingWrap">
+                <div id="shippinghead">
+                  <h1 id="shippingtext">배송 정보</h1>
+                  <hr>
+                </div>
+                <h1 class="ordertext">배송 현황</h1>
+                <div id="orderContent">
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>상품 준비중</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>출고</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>배송중</li>
+                      <li><strong>0</strong></li>
+                    </ul>
+                  </div>
+                  <div id="verticalorder">|</div>
+                  <div class="orderContentWrap">
+                    <ul>
+                      <li>배송 완료</li>
+                      <li><strong> 0</strong></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article id="basketarticle">
+              <div id="basketWrap">
+                <div id="baskethead">
+                  <h1 id="baskettext">장바구니</h1>
+                  <hr>
+                </div>
+                <h1 class="ordertext">아이템 상세</h1>
+                <div class="orderitem" id="item4">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+                <div class="orderitem" id="item5">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+                <div class="orderitem" id="item6">
+                  <div class="orderitemimg"></div>
+                  <div class="orderitemname">아이템1</div>
+                  <div class="orderitemprice">0원</div>
+                </div>
+                <div class="total">
+                  <div class="totalprice">총 <b>0</b> 원</div>
+                </div>
+              </div>
+            </article>
+
+            <article id="recommendarticle">
+              <div id="recommendWrap">
+                <div id="recommendhead">
+                  <h1 id="recommendhtext">추천 아이템</h1>
+                  <hr>
+                </div>
+                  <h1 class="ordertext">아이템 상세</h1>
+                    <div id="recommend">
+                      <div class="item" id="iitem1">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                      <div class="item" id="iitem2">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                      <div class="item" id="iitem3">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                      <div class="item" id="iitem4">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                      <div class="item" id="iitem5">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                      <div class="item" id="iitem6">
+                        <div class="itemimg"></div>
+                        <div class="itemtext"></div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+          </div>
+        </div>
+      </header>
+      <script src="my.js"></script>
+</body>
+</html>
