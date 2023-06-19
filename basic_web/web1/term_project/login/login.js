@@ -6,8 +6,9 @@ const $loginId = document.getElementById('id');
 const $loginPw = document.getElementById('pw');
 const $loginSubmit = document.getElementById('info-submit');
 const $checkbox = document.getElementById('login-checkbox');
-const userId = '';
-const userPw = '';
+const $signUpBtn = document.querySelector('#signUp-btn');
+let userId = null;
+let userPassword = null;
 
 $loginBtn.addEventListener('click', () => {
   $loginWrap.style.display = 'block';
@@ -18,13 +19,8 @@ $loginClose.addEventListener('click', () => {
 });
 
 $loginSubmit.addEventListener('click', () => {
-  const userId = $loginId.value;
-  const userPw = $loginPw.value;
 
-  if((userId === '') || (userPw === '')) {
-    alert('아이디, 비밀번호를 정확하게 입력해주세요.');
-    $loginWrap.style.display = 'block';
-  } else {
+  if(($loginId.value === userId) || ($loginPw.value === userPassword)) {
     $loginBtn.style.display = 'none';
     $logoutBtn.style.display = 'block';
     $loginWrap.style.display = 'none';
@@ -33,8 +29,21 @@ $loginSubmit.addEventListener('click', () => {
       icon: 'success',                         
       title: '로그인 성공',         
       text: userId + '님 안녕하세요!', 
+      buttons: true,
+      confirmButtonText: '확인',
     });
-  }
+    $loginWrap.style.display = 'block';
+  } 
+  if(($loginId.value !== userId) || ($loginPw.value !== userPassword)) {
+    Swal.fire({
+      icon: 'error',
+      title: '정보 불일치',
+      text: '이메일과 비밀번호를 확인해주세요!',
+      buttons: true,
+      confirmButtonText: '다시 입력하기',
+      });
+    $loginWrap.style.display = 'block';
+  } 
 
   if(!($checkbox.checked)) {
     $loginId.value = null;
@@ -54,15 +63,21 @@ $logoutBtn.addEventListener('click', () => {
     cancelButtonText: '취소'
   }).then((result) => {
     if (result.isConfirmed) {
-      Swal.fire(
-        '로그아웃 성공.',
-        '로그아웃 되었습니다.',
-        'success'
-      );
+      Swal.fire({
+        icon: 'success',                         
+        title: '로그아웃 성공',         
+        text: '로그아웃 되었습니다!', 
+        buttons: true,
+        confirmButtonText: '확인',
+      });
 
       $loginWrap.style.display = 'block';
       $loginBtn.style.display = 'block';
       $logoutBtn.style.display = 'none';
     }
   });
+});
+
+$signUpBtn.addEventListener('click', () => {
+  location.href = '../signUp/signUp.html';
 });

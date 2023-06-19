@@ -31,7 +31,8 @@ body {
   display: block;
   position: absolute;
   right: 0;
-  color: #ffffff;
+  color: #424242;
+  font-weight: 700;
   font-size: 20px;
   border-radius: 20px;
   width: 100px;
@@ -46,7 +47,8 @@ body {
   display: none;
   position: absolute;
   right: 0;
-  color: #ffffff;
+  color: #424242;
+  font-weight: 700;
   font-size: 20px;
   border-radius: 10px;
   width: 100px;
@@ -101,7 +103,8 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 20px;
-  color: white;
+  color: #424242;
+  font-weight: 700;
   border: none;
   background-color: #FFE9E9;
   cursor: pointer;
@@ -127,9 +130,9 @@ body {
 }
 
 #login-title > h1{
-  color: #FFE9E9;
+  color: #424242;
+  font-weight: 700;
   font-size: 40px;
-  font-weight: bold;
 }
 
 form {
@@ -145,7 +148,46 @@ form {
   width: 80%;
   height: 50px; 
   background-color: #E7DBDB;
+  color: #424242;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+#submit-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUp-btn {
+  font-size: 22px;
+  cursor: pointer;
+  background-color: #FFE9E9;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#signUp-btn:hover {
+  background-color: #f7a7a7;
+  color: #FFE9E9;
+}
+
+#signUp-btn:active {
+  background-color: #FFE9E9;
   color: #ffffff;
+}
+
+.login-info-submit {
+  width: 40%;
+  height: 50px; 
+  background-color: #E7DBDB;
+  color: #424242;
+  font-weight: 700;
   font-size: 20px;
   border: none;
   border-radius: 20px;
@@ -188,7 +230,8 @@ input:focus {
   width: 80%;
   height: 30px; 
   margin-bottom: 20px;
-  color: #FFE9E9;
+  color: #424242;
+  font-weight: 400;
 }
 
 #login-checkbox {
