@@ -9,6 +9,21 @@ const $checkbox = document.getElementById('login-checkbox');
 const $signUpBtn = document.querySelector('#signUp-btn');
 let userId = null;
 let userPassword = null;
+let userNickName = null;
+
+let data = new XMLHttpRequest();
+data.open('GET', './account.json', true);
+data.responseType = 'json';
+data.onload = function() {
+  if (data.status === 200) {
+    let jsondata = data.response;
+
+    userId = jsondata.email;
+    userPassword = jsondata.password;
+    userNickName = jsondata.nickName;
+  }
+};
+data.send();
 
 $loginBtn.addEventListener('click', () => {
   $loginWrap.style.display = 'block';
@@ -19,7 +34,6 @@ $loginClose.addEventListener('click', () => {
 });
 
 $loginSubmit.addEventListener('click', () => {
-
   if(($loginId.value === userId) || ($loginPw.value === userPassword)) {
     $loginBtn.style.display = 'none';
     $logoutBtn.style.display = 'block';
@@ -28,11 +42,11 @@ $loginSubmit.addEventListener('click', () => {
     Swal.fire({
       icon: 'success',                         
       title: '로그인 성공',         
-      text: userId + '님 안녕하세요!', 
+      text: userNickName + '님 안녕하세요!', 
       buttons: true,
       confirmButtonText: '확인',
     });
-    $loginWrap.style.display = 'block';
+    $loginWrap.style.display = 'none';
   } 
   if(($loginId.value !== userId) || ($loginPw.value !== userPassword)) {
     Swal.fire({
