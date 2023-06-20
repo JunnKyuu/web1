@@ -2,6 +2,7 @@ const $loginWrap = document.getElementById('login-wrap');
 const $loginClose = document.getElementById('login-close');
 const $loginBtn = document.getElementById('login-btn');
 const $logoutBtn = document.getElementById('logout-btn');
+const $homeBtn = document.querySelector('#home-btn');
 const $loginId = document.getElementById('id');
 const $loginPw = document.getElementById('pw');
 const $loginSubmit = document.getElementById('info-submit');
@@ -38,15 +39,17 @@ $loginSubmit.addEventListener('click', () => {
     $loginBtn.style.display = 'none';
     $logoutBtn.style.display = 'block';
     $loginWrap.style.display = 'none';
+    $loginWrap.style.display = 'none';
 
     Swal.fire({
       icon: 'success',                         
       title: '로그인 성공',         
       text: userNickName + '님 안녕하세요!', 
-      buttons: true,
       confirmButtonText: '확인',
-    });
-    $loginWrap.style.display = 'none';
+      closeOnClickOutside : false 
+      }).then(function move() {
+        location.href = "../Homepage/HomPage.html";
+      });
   } 
   if(($loginId.value !== userId) || ($loginPw.value !== userPassword)) {
     Swal.fire({
@@ -65,33 +68,20 @@ $loginSubmit.addEventListener('click', () => {
   }
 });
 
-$logoutBtn.addEventListener('click', () => {
-  Swal.fire({
-    title: '정말로 로그아웃 하시겠습니까?',
-    text: "확인을 누르면 로그아웃이 진행됩니다.",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: '확인',
-    cancelButtonText: '취소'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        icon: 'success',                         
-        title: '로그아웃 성공',         
-        text: '로그아웃 되었습니다!', 
-        buttons: true,
-        confirmButtonText: '확인',
-      });
 
-      $loginWrap.style.display = 'block';
-      $loginBtn.style.display = 'block';
-      $logoutBtn.style.display = 'none';
-    }
-  });
-});
 
 $signUpBtn.addEventListener('click', () => {
   location.href = '../signUp/signUp.html';
+});
+
+$homeBtn.addEventListener('click', () => {
+  Swal.fire({
+    icon: 'success',                         
+    title: 'HOME으로 이동',         
+    text:'HOME으로 이동하겠습니다!', 
+    confirmButtonText: '확인',
+    closeOnClickOutside : false 
+    }).then(function move() {
+      location.href = "../Homepage/HomPage.html";
+    });
 });

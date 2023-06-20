@@ -319,3 +319,7 @@ img {
   vertical-align: top;
   border: 0;
 }
+
+#LoginContainer > span:nth-child(2) {
+  display: none;
+}

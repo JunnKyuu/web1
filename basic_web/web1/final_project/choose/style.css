@@ -201,6 +201,10 @@ li {
   margin-right: 50px;
 }
 
+#LoginContainer > span:nth-child(1){
+  display: none;
+}
+
 #AgeBtnContainer {
   display: flex;
 }

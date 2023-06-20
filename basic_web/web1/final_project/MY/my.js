@@ -281,6 +281,3 @@ xhr2.onreadystatechange = function () {
 }
 };
 xhr2.send();
-
-
-

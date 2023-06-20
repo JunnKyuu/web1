@@ -124,3 +124,42 @@ setInterval(() => {
     seconds
   )}`;
 }, 1000);
+
+// login,logut 구현
+const $loginbtn = document.querySelector('#LoginContainer > span:nth-child(1)');
+const $logoutbtn = document.querySelector('#LoginContainer > span:nth-child(2)');
+
+$loginbtn.addEventListener('click', () => {
+  window.name = "toLogout";
+});
+
+if(window.name === "toLogout") {
+  $loginbtn.style.display = 'none';
+  $logoutbtn.style.display = 'block';
+} 
+
+$logoutbtn.addEventListener('click', () => {
+  Swal.fire({
+    title: '정말로 로그아웃 하시겠습니까?',
+    text: "확인을 누르면 로그아웃이 진행됩니다.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: '확인',
+    cancelButtonText: '취소'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        icon: 'success',                         
+        title: '로그아웃 성공',         
+        text: '로그아웃 되었습니다!', 
+        buttons: true,
+        confirmButtonText: '확인',
+      });
+    }
+  }).then(function changeToLogout() {
+    $loginbtn.style.display = 'block';
+    $logoutbtn.style.display = 'none';
+  });;
+});

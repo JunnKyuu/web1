@@ -50,7 +50,7 @@ a {
   color: white;
 }
 #loginButton {
-  display: flex;
+  display: none;
   align-items: center;
   margin-right: 50px;
 }
