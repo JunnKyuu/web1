@@ -1,6 +1,4 @@
-const calc = require('./calc');
-
-console.log(calc);
+const calc = require('./calc.js');
 
 console.log(calc.add(1, 2));
-console.log(calc.sub(3,5));
+console.log(calc.sub(10, 2));
