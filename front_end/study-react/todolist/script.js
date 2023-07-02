@@ -42,14 +42,20 @@ const appendTodos = (text) => {
   });
 
   setTodos(newTodos);
-  paintTodos();
+  showTodos();
 }
 
-const paintTodos = () => {
+const showTodos = () => {
   $todoUl.innerHTML = '';
   const allTodos = getTodos();
 
   allTodos.forEach((todo) => {
+    const todoContainer = document.createElement('div');
+    todoContainer.classList.add('todoContainer');
+
+    const innerContainer = document.createElement('div');
+    innerContainer.classList.add('innerContainer');
+
     const todoLi = document.createElement('li');
     todoLi.classList.add('todo-li');
 
@@ -62,17 +68,20 @@ const paintTodos = () => {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('deleteBtn');
-    deleteBtn.innerHTML = 'X';
+    deleteBtn.innerHTML = '삭제';
 
     if(todo.isDone === true) {
       todoItem.classList.add('done');
       checkBox.innerText = '✔';
     }
 
-    todoLi.appendChild(checkBox);
-    todoLi.appendChild(todoItem);
+    innerContainer.appendChild(checkBox);
+    innerContainer.appendChild(todoItem);
+    todoLi.appendChild(innerContainer);
     todoLi.appendChild(deleteBtn);
 
-   $todoUl.appendChild(todoLi);
+    todoContainer.appendChild(todoLi);
+
+    $todoUl.appendChild(todoContainer);
   });
 }

@@ -47,9 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
 /* css */
 body {
 	display: flex;
@@ -79,6 +76,9 @@ body > h1 {
 #todo-input {
 	width: 80%;
 	height: 40px;
+	color: #00c3ff;
+	font-size: 18px;
+	font-weight: 700;
 	border: 2px solid #35c5f0;
 	margin-right: 15px;
 	border-radius: 5px;
@@ -86,8 +86,10 @@ body > h1 {
 
 #add-button {
 	width: 50px;
-	height: 30px;
+	height: 40px;
 	color: white;
+	font-size: 18px;
+	font-weight: 700;
 	background-color: #35c5f0;
 	border-radius: 5px;
 	border: none;
@@ -102,8 +104,67 @@ body > h1 {
 	background-color: #2797b9;
 }
 
-/* .checkbox {
+.todoContainer {
+	width: 68vw;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 15px;
+	/* background-color: orange; */
+}
+
+.innerContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	/* background-color: yellow; */
+}
+
+.todo-li {
+	width: 90%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: white; */
+}
+
+.checkbox {
 	width: 30px;
 	height: 30px;
-	background-color: blue;
-} */
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 5px;
+	margin-left: 30px;
+	background-color: #35c5f0;
+}
+
+.todoItem {
+	color: #00c3ff;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 30px;
+}
+
+.deleteBtn {
+	width: 50px;
+	height: 40px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 5px;
+	border: none;
+	background-color: #35c5f0;
+	cursor: pointer;
+}
+
+.deleteBtn:hover {
+	background-color: #9de1f5;
+}
+
+.deleteBtn:active {
+	background-color: #2797b9;
+}
