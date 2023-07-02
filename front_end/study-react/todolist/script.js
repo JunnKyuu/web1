@@ -45,6 +45,19 @@ const appendTodos = (text) => {
   showTodos();
 }
 
+const deleteTodo = (todoId) => {
+  const newTodos = getTodos().filter(todo => todo.id !== todoId);
+  setTodos(newTodos);
+  showTodos();
+}
+
+const doneTodo = (todoId) => {
+  const newTodos = getTodos().map(todo => todo.id === todoId ? {...todo, isDone: !todo.isDone} : todo);
+  setTodos(newTodos);
+  showTodos();
+}
+
+
 const showTodos = () => {
   $todoUl.innerHTML = '';
   const allTodos = getTodos();
@@ -61,6 +74,7 @@ const showTodos = () => {
 
     const checkBox = document.createElement('div');
     checkBox.classList.add('checkbox');
+    checkBox.addEventListener('click', () => doneTodo(todo.id));
 
     const todoItem = document.createElement('div');
     todoItem.classList.add('todoItem');
@@ -69,6 +83,8 @@ const showTodos = () => {
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('deleteBtn');
     deleteBtn.innerHTML = '삭제';
+
+    deleteBtn.addEventListener('click', () => deleteTodo(todo.id));
 
     if(todo.isDone === true) {
       todoItem.classList.add('done');

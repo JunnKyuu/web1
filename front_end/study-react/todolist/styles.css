@@ -135,11 +135,25 @@ body > h1 {
 .checkbox {
 	width: 30px;
 	height: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
 	font-size: 18px;
 	font-weight: 700;
 	border-radius: 5px;
 	margin-left: 30px;
 	background-color: #35c5f0;
+	cursor: pointer;
+}
+
+.checkbox:hover {
+	background-color: #9de1f5;
+}
+
+.checkbox:active {
+	background-color: #2797b9;
 }
 
 .todoItem {
