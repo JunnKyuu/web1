@@ -6,24 +6,32 @@ let todos = [];
 let id = 0;
 
 // enter 입력하면 todo추가
-const init = () => {
+const enterToAdd = () => {
   $todoInput.addEventListener('keypress', (event) => {
-    if(event.key === 'Enter') {
-      appendTodos(event.target.value);
+    if((event.key === 'Enter')) {
+      if($todoInput.value === '') {
+        alert('할 일을 입력하세요!');
+      } else {
+        appendTodos(event.target.value);
       $todoInput.value = '';
+      }
     }
   });
 }
 
-init();
+enterToAdd();
 
-// 추가 클릭하면 todo추가
-// $addBtn.addEventListener('click', () => {
-//   const todoLi = document.createElement('li');
-//   todoLi.innerText = $todoInput.value;
+// click하면 todo 추가
+const clickToAdd = () => {
+  if($todoInput.value === '') {
+    alert('할 일을 입력하세요!');
+  } else {
+    appendTodos($todoInput.value);
+    $todoInput.value = '';
+  }
+}
 
-//   $todoUl.appendChild(todoLi);
-// });
+$addBtn.addEventListener('click', () => clickToAdd($todoInput.value));
 
 const setTodos = (newTodos) => {
   todos = newTodos;
@@ -57,7 +65,6 @@ const doneTodo = (todoId) => {
   showTodos();
 }
 
-
 const showTodos = () => {
   $todoUl.innerHTML = '';
   const allTodos = getTodos();
@@ -89,6 +96,8 @@ const showTodos = () => {
     if(todo.isDone === true) {
       todoItem.classList.add('done');
       checkBox.innerText = '✔';
+      todoItem.style.color = '#dddddd';
+      todoItem.style.textDecorationLine = 'line-through';
     }
 
     innerContainer.appendChild(checkBox);
