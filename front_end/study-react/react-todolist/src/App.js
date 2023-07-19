@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import TodoBoard from "./Components/TodoBoard";
 
-function App() {
+const App = () => {
   const [inputValue, setInputValue] = useState("");
   const [todoList, setTodoList] = useState([]);
 
+  const addItem = () => {
+    setTodoList([...todoList, inputValue]);
+  };
+
   return (
-    <div>
+    <div className="App">
       <input
+        value={inputValue}
         type="text"
-        onChange={(event) => setInputValue(event.target.value)}
-      />
-      <button
-        onClick={(inputValue) => {
-          setTodoList(inputValue);
+        onChange={(event) => {
+          setInputValue(event.target.value);
         }}
-      >
-        추가
-      </button>
+      />
+      <button onClick={addItem}>추가</button>
+
       <TodoBoard todoList={todoList} />
     </div>
   );
-}
+};
 
 export default App;

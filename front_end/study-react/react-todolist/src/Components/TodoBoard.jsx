@@ -1,11 +1,15 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
-function TodoBoard(props) {
+const TodoBoard = (props) => {
   return (
-    <div>
-      <h1>TodoList</h1>
+    <div className="TodoBoard">
+      <h1>Todo List</h1>
+      {props.todoList.map((item) => (
+        <TodoItem item={item} />
+      ))}
     </div>
   );
-}
+};
 
 export default TodoBoard;

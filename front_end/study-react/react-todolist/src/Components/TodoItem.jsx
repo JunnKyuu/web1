@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function TodoItem(props) {
-  return (
-
-  )
-}
+const TodoItem = (props) => {
+  return <div className="TodoItem">{props.item}</div>;
+};
 
 export default TodoItem;
