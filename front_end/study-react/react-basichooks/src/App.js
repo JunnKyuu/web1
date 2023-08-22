@@ -1,19 +1,40 @@
-import React, { useState } from "react";
-import Info from "./components/Info";
+import { useState, useRef } from "react";
+import "./App.css";
 
 const App = () => {
-  const [visible, setVisible] = useState(false);
+  const [render, setRender] = useState(false);
+  const countRef = useRef(0);
+  let countVar = 0;
+
+  console.log("***** 렌더링 후 Ref:", countRef.current);
+  console.log("***** 렌더링 후 Var:", countVar);
+
+  const increaseRef = () => {
+    countRef.current = countRef.current + 1;
+    console.log("Ref Up! --->", countRef.current);
+  };
+
+  const increaseVar = () => {
+    countVar = countVar + 1;
+    console.log("Var Up! --->", countVar);
+  };
+
+  const doRender = () => {
+    setRender(!render);
+  };
+
   return (
-    <div>
-      <button
-        onClick={() => {
-          setVisible(!visible);
-        }}
-      >
-        {visible ? "숨기기" : "보이기"}
-      </button>
-      <hr />
-      {visible && <Info />}
+    <div className="App">
+      <header className="App-header">
+        <p>Ref: {countRef.current}</p>
+        <p>Var: {countVar}</p>
+
+        <div>
+          <button onClick={increaseRef}>Ref Up!</button>
+          <button onClick={increaseVar}>Var Up!</button>
+          <button onClick={doRender}>Render!</button>
+        </div>
+      </header>
     </div>
   );
 };
