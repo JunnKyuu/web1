@@ -1,40 +1,13 @@
-import { useState, useRef } from "react";
-import "./App.css";
+import React from "react";
+import useInput from "./components/UseInput";
 
 const App = () => {
-  const [render, setRender] = useState(false);
-  const countRef = useRef(0);
-  let countVar = 0;
-
-  console.log("***** 렌더링 후 Ref:", countRef.current);
-  console.log("***** 렌더링 후 Var:", countVar);
-
-  const increaseRef = () => {
-    countRef.current = countRef.current + 1;
-    console.log("Ref Up! --->", countRef.current);
-  };
-
-  const increaseVar = () => {
-    countVar = countVar + 1;
-    console.log("Var Up! --->", countVar);
-  };
-
-  const doRender = () => {
-    setRender(!render);
-  };
+  const maxLen = (value) => value.length <= 10;
+  const name = useInput("Lee", maxLen);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Ref: {countRef.current}</p>
-        <p>Var: {countVar}</p>
-
-        <div>
-          <button onClick={increaseRef}>Ref Up!</button>
-          <button onClick={increaseVar}>Var Up!</button>
-          <button onClick={doRender}>Render!</button>
-        </div>
-      </header>
+    <div className="app">
+      <input placeholder="Name" {...name} />
     </div>
   );
 };
