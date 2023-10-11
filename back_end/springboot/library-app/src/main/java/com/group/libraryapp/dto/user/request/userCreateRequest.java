@@ -1,6 +1,6 @@
 package com.group.libraryapp.dto.user.request;
 
-public class userCreateRequest {
+public class UserCreateRequest {
     private String name; // 별도 null은 체크
     private Integer age; // 대문자 Integer는 null을 표현
 
