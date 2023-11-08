@@ -1,6 +1,6 @@
 package com.example.libraryapp2.dto.user.request;
 
-public class deleteUser
+public class DeleteUser
 {
     String name;
 
