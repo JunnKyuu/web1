@@ -5,20 +5,18 @@ import com.example.libraryapp2.domain.user.UserRepository;
 import com.example.libraryapp2.dto.user.request.UserUpdateRequest;
 import com.example.libraryapp2.dto.user.request.UserCreateRequest;
 import com.example.libraryapp2.dto.user.response.UserResponse;
-import com.example.libraryapp2.repository.user.UserJdbcRepository;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UserService {
+public class UserServiceJDBC {
     private final UserRepository userRepository;
 
 //    public UserService(JdbcTemplate jdbcTemplate) {
 //        this.userRepository = new UserJdbcRepository(jdbcTemplate);
 //    }
 
-    public UserService(UserRepository userRepository) {
+    public UserServiceJDBC(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
