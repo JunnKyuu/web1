@@ -9,9 +9,9 @@ import com.example.libraryapp2.dto.user.response.UserResponse;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UserServiceJPA {
+public class UserService {
     private final UserRepository userRepository;
-    public UserServiceJPA(UserRepository userRepository) {
+    public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
