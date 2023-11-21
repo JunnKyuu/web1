@@ -15,5 +15,5 @@ spring:
           show_sql: true
           dialect: org.hibernate.dialect.MySQL8Dialect
 server:
-  port: 8081
+  port: 8080
 

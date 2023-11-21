@@ -5,10 +5,12 @@ import com.example.libraryapp2.domain.user.UserRepository;
 import com.example.libraryapp2.dto.user.request.UserCreateRequest;
 import com.example.libraryapp2.dto.user.request.UserUpdateRequest;
 import com.example.libraryapp2.dto.user.response.UserResponse;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class UserService {
     private final UserRepository userRepository;
     public UserService(UserRepository userRepository) {

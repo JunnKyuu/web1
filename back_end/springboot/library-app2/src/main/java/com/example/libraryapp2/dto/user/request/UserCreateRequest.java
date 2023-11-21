@@ -1,13 +1,9 @@
 package com.example.libraryapp2.dto.user.request;
 
 public class UserCreateRequest {
-
-    private Long id;
     private String name;
     private Integer age;
 
-
-    public Long getId() { return id; }
     public String getName() {
         return name;
     }
