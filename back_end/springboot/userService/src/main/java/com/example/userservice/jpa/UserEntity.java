@@ -1,9 +1,6 @@
 package com.example.userservice.jpa;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -12,5 +9,14 @@ import lombok.Data;
 public class UserEntity {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
+
+    @Column(nullable = false, length = 50, unique = true)
+    private String email;
+    @Column(nullable = false, length = 50)
+    private String name;
+    @Column(nullable = false, unique = true)
+    private String userId;
+    @Column(nullable = false, unique = true)
+    private String encryptedPwd;
 }
